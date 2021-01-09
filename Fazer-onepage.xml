@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<html>
 &lt;head&gt;
  
      
@@ -94,13 +93,6 @@
     <link expr:href='data:blog.url' hreflang='x-default' rel='alternate'/>
     <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
-    
-    <meta content='xxxxx' name='msvalidate.01'/>
-    <meta content='xxxxx' name='alexaVerifyID'/>
-    <meta content='India' name='geo.placename'/>
-    <meta content='data:post.author' name='Author'/>
-
-	
 	
     <!-- [ Social Media Meta Tag ] -->
     <b:if cond='data:blog.url == data:blog.homepageUrl'>
@@ -175,11 +167,28 @@
     width: 100%;}
 	
 	#PageList2{Position:sticky;top:0}
+
+#Blog1 {
+  height: 100vh;
+}
+
+#Blog1 section {
+  height: 100vh;
+  overflow: hidden;
 }
     </style>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous"></script>
+<script src="https://dl.dropboxusercontent.com/s/33g5sur531w62is/jquery.fullpage.min.js"></script>
+<script type="">
+$('#fullpage').fullpage();
+</script>
 
 &lt;/head&gt;&lt;!--
      
+	 
     <head/>--&gt;
  
      
@@ -257,68 +266,29 @@
                          
 							<!--homepage-->
 							 <b:if cond='data:blog.url == data:blog.homepageUrl'>
-  <section class='readermode P-br4px'>
-  <h3>Simplify your code with Particle.css</h3>
-  <div class='P-df P-df-fww P-df-jcsb bigbox P-pr'>
-    <div class='P-pa P-ma P-pa-middle'>
-      <button class='icon-holder btn round'>
-        <span class='ai-arrowright'></span>
-      </button>
-    </div>
-    <code class='box-45p-tab box-100p Mgin-t24px Mgin-b24px mh200px'><span class='tc-pink'>.Class1 {</span>
-    <br/>
-    <span class='tc-green'>Padding:</span>
-    <span class='tc-blue'>24px</span>
-    <br/>
-    <span class='tc-green'>Display:</span>
-    <span class='tc-blue'>flex</span>
-    <br/>
-    <span class='tc-green'>text-color:</span>
-    <span class='tc-blue'>black</span>
-    <br/>
-    <span class='tc-pink'>}</span></code>
-    <code class='box-45p-tab box-100p Mgin-t24px mh200px Mgin-b24px'><span class='tc-pink'>&lt; div</span>
-    <span class='tc-green'>class="</span>
-    <span class='tc-blue'>P-df Pad-24px tc-black</span>
-    <span class='tc-green'>"</span>
-    <span class='tc-pink'>&gt;</span></code>
-  </div>
-  <ol>
-    <li class='h3'>Benefits of Particle</li>
-    <li>Same fun as writing own css</li>
-    <li>Easy to learn</li>
-    <li>Free to use</li>
-    <li>Yours to cutomize</li>
-  </ol>
-  <h3>Implement Particle in your website</h3>
-  <code>&lt; link href
-  <span class='tc-pink'>=https://dl.dropboxusercontent.com/s/gx4ispdflrjbdsp/amritcrome-particle-v1.css</span>
-  <span class='tc-green'>rel='stylesheet'</span>
-  <span class='tc-bluetype'>text/css</span>
-  &gt;</code>
-</section>
+
 </b:if>
 							
 							
 							   <b:include data='top' name='status-message'/>
                             <!-- posts -->
                             <b:if cond='data:blog.pageType != &quot;error_page&quot;'>
-                                <div class='flexbox'>
+                               
                                     <b:loop values='data:posts' var='post'>
                                         <b:if cond='data:post.isFirstPost'>
                                             <b:if cond='data:blog.pageType == &quot;index&quot; or data:blog.pageType == &quot;archive&quot;'>
-                                                <div class='fz-heropost box-100p Mgin-b24px'>
+                                                <section class='fz-heropost box-100p Mgin-b24px'>
                                                     <b:include data='post' name='post'/>
-                                                </div>
+                                                </section>
                                                 <b:else/>
                                                  
                                                     <b:include data='post' name='post'/>
                                                  
                                             </b:if>
                                             <b:else/>
-                                            <div class='fz-post P-br4px P-shadow P-effect P-br4px Pad-l6px box-100p box-50p-tab box-95p-ipad Mgin-b8px Mgin-t4px'>
+                                            <section class='fz-post P-br4px P-shadow P-effect P-br4px Pad-l6px box-100p box-50p-tab box-95p-ipad Mgin-b8px Mgin-t4px'>
                                                 <b:include data='post' name='post'/>
-                                            </div>
+                                            </section>
                                         </b:if>
                                         <!-- Ad -->
                                         <b:if cond='data:post.includeAd'>
@@ -352,7 +322,7 @@
                                     <b:include name='nextprev'/>
 									</div>
 									</div>
-                                </div>
+                                
                                 <b:else/>
                                 <!--for ad banner for error page-->
                             </b:if>
@@ -522,8 +492,8 @@
                                                 </h2>
                                             </b:if>
                                             <div>
-                                                <b:if cond='data:post.snippet'>
-                                                    <data:post.snippet/>
+                                                <b:if cond='data:post.body'>
+                                                    <data:post.body/>
                                                 </b:if>
                                             </div>
                                             <b:if cond='data:post.hasJumpLink'>
@@ -623,8 +593,8 @@
                                             </h2>
                                             <p class='sub-hdgo'>
                                      
-                                                <b:if cond='data:post.snippet'>
-                                                    <data:post.snippet/>
+                                                <b:if cond='data:post.body'>
+                                                    <data:post.body/>
                                                 </b:if>
                                             </p>
                                             <b:if cond='data:post.hasJumpLink'>
