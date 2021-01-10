@@ -168,48 +168,15 @@
 	
 	#PageList2{Position:sticky;top:0}
 
-body {
-	margin: 0;
-  font-family: 'Merriweather', serif;
-}
-
 #Blog1 {
 	position: relative;
 	overflow: hidden;
 }
 
-section {
-	box-sizing: border-box;
-	position: relative;
-	height: 100vh;
-	overflow: hidden;
-	font-size: 10vmin;
-	padding: 1em;
-	color: hsla(0, 0%, 100%, .8);
-  background-position: center center;
-  background-size: cover;
-}
-
-section:first-child {
-  background-image: url('https://source.unsplash.com/Bj_MIJ3vpT4/1920x1080');
-}
-
-section:nth-child(2) {
-  background-image: url('https://source.unsplash.com/jWskS_wLMDo/1920x1080');
-}
-
-section:nth-child(3) {
-  background-image: url('https://source.unsplash.com/O6vaYviRDoo/1920x1080');
-}
-
-section:nth-child(4) {
-  background-image: url('https://source.unsplash.com/vPOYZac2hiE/1920x1080');
-}
-
 #indicator {
   position: absolute;
   top: 0px;
-  left: 20px;
+  right: 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -218,16 +185,18 @@ section:nth-child(4) {
 
 #indicator > div {
   background-color: white;
-  width:10px;
-  height:10px;
+  width:8px;
+  height:8px;
   border-radius: 5px;
   margin: 10px;
   cursor: pointer;
 }
 
 #indicator > div.active {
-  transform: scale(1.6);
+  transform: scale(1.8);
 }
+
+.f48px{font-size:38px;font-weight:300!important}
 
     </style>
 
@@ -276,8 +245,8 @@ document.addEventListener("DOMContentLoaded", function() {
         <!--fazer header-->  
         <div class='P-section'>
             <div class='flexbox P-ma'>
-			<!--fazer left pane-->
-			<b:section class="box-100p box-30p-ipad P-bs1 P-zi2 Mgin-t16px P-br8px" id='leftone' name='left' showaddelement='yes'>
+			<!--fazer -->
+			<b:section class="P-dn" id='leftone' name='left' showaddelement='yes'>
 <b:widget id='PageList2' locked='true' mobile='yes' title='Pages' type='PageList' version='1'>
   <b:widget-settings>
     <b:widget-setting name='pageListJson'><![CDATA[{'3812960179960391523': {'href': 'https://particle.amritcrome.com/p/how-to-create-and-use-particle-class.html', 'title': 'How to create and use a Particle Class.', 'position': 0}, '8984768463021713060': {'href': 'https://particle.amritcrome.com/p/particle-p-classes.html', 'title': 'Particle  P-Classes', 'position': 1}, '1395815746492519104': {'href': 'https://particle.amritcrome.com/p/particle.html', 'title': 'Value based classes', 'position': 2}, '4189253833579585061': {'href': 'https://particle.amritcrome.com/p/particle-buttons.html', 'title': 'Particle Buttons', 'position': 3}, '6061453477919636137': {'href': 'https://particle.amritcrome.com/p/particle-effects.html', 'title': 'Particle Effects', 'position': 4}, '2425680432135375213': {'href': 'https://particle.amritcrome.com/p/particle-chips.html', 'title': 'Particle Chips', 'position': 5}, '3415900426798633458': {'href': 'https://particle.amritcrome.com/p/particle-cards.html', 'title': 'Particle Cards', 'position': 6}}]]></b:widget-setting>
@@ -316,7 +285,8 @@ document.addEventListener("DOMContentLoaded", function() {
 						</b:includable>
 </b:widget>
 </b:section>
-                <b:section class='box-100p box-70p-ipad bg-subbackground' id='main' name='Main' showaddelement='no'>
+<div class="P-pf P-l0 P-t0 Pad-24px P-zi1"><a expr:href='data:blog.homepageUrl' class="P-bs2 Pad-16px ai-amritcrome bg-mygrad icon round tc-black"></a></div>
+                <b:section class='box-100p bg-subbackground' id='main' name='Main' showaddelement='no'>
                   <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1'>
                     <b:widget-settings>
                       <b:widget-setting name='showDateHeader'>true</b:widget-setting>
@@ -352,12 +322,13 @@ document.addEventListener("DOMContentLoaded", function() {
 							
 							   <b:include data='top' name='status-message'/>
                             <!-- posts -->
+							
                             <b:if cond='data:blog.pageType != &quot;error_page&quot;'>
                                
                                     <b:loop values='data:posts' var='post'>
                                         <b:if cond='data:post.isFirstPost'>
                                             <b:if cond='data:blog.pageType == &quot;index&quot; or data:blog.pageType == &quot;archive&quot;'>
-                                                <section class='fz-heropost box-100p Mgin-b24px'>
+                                                <section class='fz-heropost box-h100vh P-oh P-pr box-100p'>
                                                     <b:include data='post' name='post'/>
                                                 </section>
                                                 <b:else/>
@@ -366,7 +337,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                                  
                                             </b:if>
                                             <b:else/>
-                                            <section class='fz-post P-br4px P-shadow P-effect P-br4px Pad-l6px box-100p box-50p-tab box-95p-ipad Mgin-b8px Mgin-t4px'>
+                                            <section class='fz-post box-h100vh P-oh P-pr box-100p'>
                                                 <b:include data='post' name='post'/>
                                             </section>
                                         </b:if>
@@ -591,8 +562,9 @@ document.addEventListener("DOMContentLoaded", function() {
                                     </div>
                                     <b:else/>
                                     <!--this is post starting-->
-                                    <div class='cc-card pa-light P-df P-df-fww Pad-16px Mgin-b24px'>
-                                        <div class='cc-header box-full'>
+									<div class="bigbox P-oa">
+                                    <div class='Pad-24px box-100p box-h100vh home-post-slider'>
+                                        <div class='cc-header P-dn box-full'>
                                             <div class='chip box-100p'>
                                                 <div class='chip-txt-func'>
                                                     <b:if cond='data:post.authorProfileUrl'>
@@ -611,18 +583,15 @@ document.addEventListener("DOMContentLoaded", function() {
                                                             </span>
                                                         </div>
                                                         <div class='chip-subhdg'>
-                                                            <b:if cond='data:post.dateHeader'>
-                                                                <data:post.dateHeader/>
-                                                            </b:if>
+                                                            
                                                         </div>
                                                         <div class='chip-img-func'>
-<!-- sharing links version 1-->
-<div class='drop'><span class='chip-icon ai-share cal-ho-splash P-ho-border round'/><div class='down P-br4px P-bs2 P-r0 P-zi1 cor-menu bg-subbackground'><ul><li><a expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-facebook'/> Facebook</a></li><li><a expr:href='&quot;https://twitter.com/share?url=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title + &quot;&amp;via=amritcrome&quot;' rel='noopener' target='_blank'><span class='icon ai-twitter'/> Twitter</a></li><li><b:if cond='data:blog.isMobile == &quot;true&quot;'><a expr:href='&quot;whatsapp://send?text=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon ai-whatsapp'/> Whatsapp</a><b:else/><a expr:href='&quot;https://web.whatsapp.com/send?text=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon ai-whatsapp'/> Whatsapp</a></b:if></li><li><a expr:href='&quot;httpS://pinterest.com/pin/create/bookmarklet/?url=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-pinterest'/> Pinterest</a></li><li class='icongroup'><a expr:href='&quot;http://tumblr.com/widgets/share/tool?canonicalUrl=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-tumblr'/></a><a expr:href='&quot;https://vk.com/share.php?url=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-vk'/></a><a expr:href='&quot;http://www.linkedin.com/shareArticle?mini=true&amp;url=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-linkedin'/></a><a expr:href='&quot;https://www.reddit.com/submit?url=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon ai-reddit'/></a></li></ul></div></div></div>
+</div>
                                                     </b:if>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class='cc-image box-100p box-30p-mlc box-100p-tab box-40p-ipad P-br8px P-oh'>
+                                        <div class='cc-image P-dn box-100p box-30p-mlc box-100p-tab box-40p-ipad P-br8px P-oh'>
                                             <b:if cond='data:post.firstImageUrl'>
                                                 <a expr:href='data:post.link ? data:post.link : data:post.url'><img class='P-ofc P-br8px box-100p box-90p-mlc box-100p-tab box-90p-ipad' expr:alt='data:post.title' expr:src='resizeImage(data:post.firstImageUrl, 400, &quot;385:155&quot;)'/></a>
                                                 <b:else/>
@@ -636,10 +605,10 @@ document.addEventListener("DOMContentLoaded", function() {
                                                 </b:if>
                                             </div>
                                         </div>
-                                        <div class='cc-content box-100p box-70p-mlc box-100p-tab box-60p-ipad Pad-0px Pad-t16px P-pr P-oh'>
+                                        <div class='cc-content Mgin-t56px'>
                                             <!-- labels-->
                                             <b:if cond='data:top.showPostLabels and data:post.labels'>
-                                                <div class='brdcrum'>
+                                                <div class=''>
                                                     <b:loop values='data:post.labels' var='label'>
                                                         <a expr:href='data:label.url' rel='tag'>
                                                             <data:label.name/>
@@ -650,7 +619,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                                     </b:loop>
                                                 </div>
                                             </b:if>
-                                            <h2 class='hdg' itemprop='name'>
+                                            <h1 class='Mgin-t24px f48px' itemprop='name'>
                                                 <b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'>
                                                     <a expr:href='data:post.link ? data:post.link : data:post.url'>
                                                         <b:if cond='data:post.title'>
@@ -670,45 +639,15 @@ document.addEventListener("DOMContentLoaded", function() {
                                                      
                                                     </b:if>
                                                 </b:if>
-                                            </h2>
-                                            <p class='sub-hdgo'>
-                                     
-                                                <b:if cond='data:post.body'>
-                                                    <data:post.body/>
-                                                </b:if>
-                                            </p>
-                                            <b:if cond='data:post.hasJumpLink'>
-                                                <a class='btn btn-sm ca-ho-light Mgin-t16px Mgin-l16px P-br4px' expr:href='data:post.url + &quot;#more&quot;' expr:title='data:post.title'>
-                                                    <data:post.jumpText/>
-                                                </a>
-                                                <b:else/>
-                                                <a class='btn btn-sm ca-ho-light Mgin-t16px Mgin-l16px P-br4px' expr:href='data:post.url' expr:title='data:post.title'>
-                                                    <data:post.jumpText/>
-                                                </a>
-                                            </b:if>
-                                            <div class='fz-postdown P-dn aflix'>
-                                                <div class='fz-infobox pa-pipple pa-show P-fl'>
-                                                    <button class='btn-sm round tc-white bg-mycolor'>Info 
-                                                         
-                                                        <span class='ai-info ai-fw'/>
-                                                    </button>
-                                                    <div class='fz-info bg-mycolor pal-pipple pal-show'/>
-                                                    <div class='pal-show P-t0 P-b0 P-r0 P-l0 P-taj P-pa Pad-24px'>
-                                                        <div class='fz-snippet'>
-                                                            <!--b:if cond='data:post.snippet'><data:post.snippet/></b:if-->
-                                                        </div>
-                                                        <button class='btn btn-sm ca-ho-ripple P-pa P-b0 Mgin-24px P-r0'>
-                                                            <a expr:href='data:post.url + &quot;#more&quot;' expr:title='data:post.title'>
-                                                                <data:post.jumpText/>
-                                                            </a>
-                                                        </button>
-                                                    </div>
-                                                </div>
+                                            </h1>
+                                           
+                                     <b:if cond='data:post.dateHeader'>
+                                                                <data:post.dateHeader/>
+                                                            </b:if>
                                                 
-                                            </div>
-                                            <script type='application/ld+json'>{&quot;@context&quot;: &quot;http://schema.org&quot;,&quot;@type&quot;: &quot;BlogPosting&quot;,&quot;mainEntityOfPage&quot;: {&quot;@type&quot;: &quot;WebPage&quot;,&quot;@id&quot;: &quot;
-                                                 
-                                                <b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'>
+                                          
+                                            
+<script type='application/ld+json'>{&quot;@context&quot;: &quot;http://schema.org&quot;,&quot;@type&quot;: &quot;BlogPosting&quot;,&quot;mainEntityOfPage&quot;: {&quot;@type&quot;: &quot;WebPage&quot;,&quot;@id&quot;: &quot;<b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'>
                                                     <data:post.title/>
                                                     <b:else/>
                                                     <data:post.title/>
@@ -736,7 +675,13 @@ document.addEventListener("DOMContentLoaded", function() {
                                              
                                             </script>
                                         </div>
+										<div class="P-pa P-r0 P-b0 Mgin-24px P-zi1"><!-- sharing links version 1-->
+<div class='drop icon-holder bg-mygrad round tc-black'><span class='chip-icon ai-share cal-ho-splash P-ho-border round'/><div class='down P-br4px P-bs2 P-b0 P-r0 Mgin-r24px Mgin-b24px P-zi1 cor-menu bg-subbackground'><ul><li><a expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-facebook'/> Facebook</a></li><li><a expr:href='&quot;https://twitter.com/share?url=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title + &quot;&amp;via=amritcrome&quot;' rel='noopener' target='_blank'><span class='icon ai-twitter'/> Twitter</a></li><li><b:if cond='data:blog.isMobile == &quot;true&quot;'><a expr:href='&quot;whatsapp://send?text=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon ai-whatsapp'/> Whatsapp</a><b:else/><a expr:href='&quot;https://web.whatsapp.com/send?text=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon ai-whatsapp'/> Whatsapp</a></b:if></li><li><a expr:href='&quot;httpS://pinterest.com/pin/create/bookmarklet/?url=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-pinterest'/> Pinterest</a></li><li class='icongroup'><a expr:href='&quot;http://tumblr.com/widgets/share/tool?canonicalUrl=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-tumblr'/></a><a expr:href='&quot;https://vk.com/share.php?url=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-vk'/></a><a expr:href='&quot;http://www.linkedin.com/shareArticle?mini=true&amp;url=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-linkedin'/></a><a expr:href='&quot;https://www.reddit.com/submit?url=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon ai-reddit'/></a></li></ul></div></div></div>
                                     </div>
+									<b:if cond='data:post.body'>
+                                                    <data:post.body/>
+                                                </b:if>
+									</div>
                                 </b:if>
                                 <b:else/>
                                 
@@ -762,7 +707,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </b:if>
 								
-                                <div class='readermode P-br8px'>
+                                <div class='bigbox P-oa'>
                                    
                                         <b:if cond='data:blog.metaDescription'><p class='sub-hdg'>
         <data:blog.metaDescription/></p>
