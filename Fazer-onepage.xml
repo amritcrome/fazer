@@ -168,22 +168,102 @@
 	
 	#PageList2{Position:sticky;top:0}
 
-#Blog1 {
-  height: 100vh;
+body {
+	margin: 0;
+  font-family: 'Merriweather', serif;
 }
 
-#Blog1 section {
-  height: 100vh;
-  overflow: hidden;
+#Blog1 {
+	position: relative;
+	overflow: hidden;
 }
+
+section {
+	box-sizing: border-box;
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+	font-size: 10vmin;
+	padding: 1em;
+	color: hsla(0, 0%, 100%, .8);
+  background-position: center center;
+  background-size: cover;
+}
+
+section:first-child {
+  background-image: url('https://source.unsplash.com/Bj_MIJ3vpT4/1920x1080');
+}
+
+section:nth-child(2) {
+  background-image: url('https://source.unsplash.com/jWskS_wLMDo/1920x1080');
+}
+
+section:nth-child(3) {
+  background-image: url('https://source.unsplash.com/O6vaYviRDoo/1920x1080');
+}
+
+section:nth-child(4) {
+  background-image: url('https://source.unsplash.com/vPOYZac2hiE/1920x1080');
+}
+
+#indicator {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#indicator > div {
+  background-color: white;
+  width:10px;
+  height:10px;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#indicator > div.active {
+  transform: scale(1.6);
+}
+
     </style>
-	
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
-        crossorigin="anonymous"></script>
-<script src="https://dl.dropboxusercontent.com/s/33g5sur531w62is/jquery.fullpage.min.js"></script>
-<script type="">
-$('#fullpage').fullpage();
+
+<script src="https://cdn.jsdelivr.net/gh/fabeat/responsive-fullpage-scroll@v1.0.3/dist/fullpage-scroll.js"></script>
+<script>
+// Example for:
+// https://github.com/fabeat/responsive-fullpage-scroll
+
+document.addEventListener("DOMContentLoaded", function() {
+  var wrap = document.getElementById('Blog1');
+  var fps = new FullPageScroll(wrap);
+  var indicator = document.createElement('div');
+  indicator.id = 'indicator';
+  var slideIndicators = [];
+  fps.slides.forEach(function(slide, index){
+    var slideIndicator = document.createElement('div');
+    slideIndicator.onclick = function() {
+      fps.goToSlide(index);
+    }
+    if (index === fps.currentSlide) {
+      slideIndicator.className = "active";
+    }
+    indicator.appendChild(slideIndicator);
+    slideIndicators.push(slideIndicator);
+  });
+  document.body.appendChild(indicator);
+  fps.onslide = function() {
+    slideIndicators.forEach(function(slideIndicator, index) {
+      if (index === fps.currentSlide) {
+        slideIndicator.className = "active";
+      } else {
+        slideIndicator.className = "";
+      }
+    });
+  }
+});
 </script>
 
 &lt;/head&gt;&lt;!--
