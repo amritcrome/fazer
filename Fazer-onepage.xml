@@ -202,8 +202,13 @@
 
 #Blog1 {
 	position: relative;
-	overflow: hidden;
+	overflow: auto;
+	height:100vh;
+	scroll-snap-type:y mandatory;
+	min-height:-webkit-fill-available;
+	-webkit-overflow-scrolling: touch;touch-action: auto;
 }
+#Blog1 section{scroll-snap-align:start}
 
 #indicator {
   position: absolute;
@@ -232,8 +237,8 @@
 
     </style>
 
-<script src="https://cdn.jsdelivr.net/gh/fabeat/responsive-fullpage-scroll@v1.0.3/dist/fullpage-scroll.js"></script>
-<script>
+<!--script src="https://cdn.jsdelivr.net/gh/fabeat/responsive-fullpage-scroll@v1.0.3/dist/fullpage-scroll.js"></script-->
+<!--script>
 // Example for:
 // https://github.com/fabeat/responsive-fullpage-scroll
 
@@ -265,7 +270,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 });
-</script>
+</script-->
 
 &lt;/head&gt;&lt;!--
      
@@ -510,8 +515,10 @@ document.addEventListener("DOMContentLoaded", function() {
                     <b:includable id='post' var='post'>
                             <b:if cond='data:blog.pageType == &quot;index&quot; or data:blog.pageType == &quot;archive&quot;'>
                                 <b:if cond='data:post.isFirstPost'>
-                                    <div class='cc-card box-100p box-100p-tab box-80p-ipad center P-br8px P-bs2'>
-                                        <div class='cc-image fz-firstimage P-br4px P-oh'>
+								<div class="P-df P-sstxm P-oa">
+                                    <div class='Pad-24px box-100p box-h100vh box-w100vw home-post-slider P-pr P-ssac'>
+									<div class="Mgin-t56px Pad-t24px">
+                                        <div class='cc-image P-dn fz-firstimage P-br4px P-oh'>
                                             <b:if cond='data:post.firstImageUrl'>
                                                 <a expr:href='data:post.link ? data:post.link : data:post.url'><img expr:alt='data:post.title' expr:src='resizeImage(data:post.firstImageUrl, 600, &quot;3:1&quot;)'/></a>
                                                 <b:else/>
@@ -558,7 +565,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                             </b:if>
 											
                                         </div>
-                                        <div class='cc-content bg-subbackground Pad-16px'>
+                                        <div class='cc-content bg-subbackground'>
                                             <b:if cond='data:post.title'>
                                                 <h2 itemprop='name'>
                                                     <b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'>
@@ -575,9 +582,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                                 </h2>
                                             </b:if>
                                             <div>
-                                                <b:if cond='data:post.body'>
-                                                    <data:post.body/>
-                                                </b:if>
+                                                
                                             </div>
                                             <b:if cond='data:post.hasJumpLink'>
                                                 <a class='P-dib Pad-b16px Pad-t24px' expr:href='data:post.url + &quot;#more&quot;' expr:title='data:post.title'>
@@ -591,11 +596,17 @@ document.addEventListener("DOMContentLoaded", function() {
                                         </div>
                                         <script type='application/ld+json'>{&quot;@context&quot;: &quot;http://schema.org&quot;,&quot;@type&quot;: &quot;BlogPosting&quot;,&quot;mainEntityOfPage&quot;: {&quot;@type&quot;: &quot;WebPage&quot;,&quot;@id&quot;: &quot;<b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'><data:post.title/><b:else/><data:post.title/></b:if>&quot;},&quot;headline&quot;: &quot;<data:post.title/>&quot;,&quot;description&quot;: &quot;<b:if cond='data:post.snippet'><data:post.snippet/><b:else/>here comes the meta description that is necessary for neptarg posts maen not working</b:if>&quot;,&quot;datePublished&quot;: &quot;<data:post.timestampISO8601/>&quot;,&quot;dateModified&quot;: &quot;<data:post.timestampISO8601/>&quot;,&quot;image&quot;: {&quot;@type&quot;: &quot;ImageObject&quot;,&quot;url&quot;: &quot;<b:if cond='data:post.firstImageUrl'><data:post.firstImageUrl/><b:else/>https://4.bp.blogspot.com/-Fz_Q3vd2GsQ/XI1gjSNRDTI/AAAAAAAANIY/uFj68_tFkgshE3HBgOyh_H3-p2BIc0n5wCLcBGAs/amritcrome%2BFazerPreview.jpg</b:if>&quot;,&quot;height&quot;: 630,&quot;width&quot;: 1200},&quot;publisher&quot;: {&quot;@type&quot;: &quot;Organization&quot;,&quot;name&quot;: &quot;Anhancer&quot;,&quot;logo&quot;: {&quot;@type&quot;: &quot;ImageObject&quot;,&quot;url&quot;: &quot;https://lh3.googleusercontent.com/ULB6iBuCeTVvSjjjU1A-O8e9ZpVba6uvyhtiWRti_rBAs9yMYOFBujxriJRZ-A=h60&quot;,&quot;width&quot;: 206,&quot;height&quot;:60}},&quot;author&quot;: {&quot;@type&quot;: &quot;Person&quot;,&quot;name&quot;: &quot;<data:post.author/>&quot;}}
                                        </script>
-                                    </div>
+                                    </div></div>
+									<b:if cond='data:post.body'>
+                                                    <data:post.body/>
+                                                </b:if>
+									</div>
                                     <b:else/>
                                     <!--this is post starting-->
 									<div class="P-df P-sstxm P-oa">
-                                    <div class='Pad-24px box-100p box-h100vh home-post-slider P-pr P-ssac'>
+                                    <div class='Pad-24px box-100p box-h100vh box-w100vw home-post-slider P-pr P-ssac'>
+									<div class="Mgin-t56px Pad-t24px">
+									
                                         <div class='cc-header P-dn box-full'>
                                             <div class='chip box-100p'>
                                                 <div class='chip-txt-func'>
@@ -637,7 +648,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                                 </b:if>
                                             </div>
                                         </div>
-                                        <div class='cc-content Mgin-t56px'>
+                                        <div class=''>
                                             <!-- labels-->
                                             <b:if cond='data:top.showPostLabels and data:post.labels'>
                                                 <div class=''>
@@ -709,7 +720,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         </div>
 										<div class="P-pa P-r0 P-b0 Mgin-24px Mgin-b24px P-zi1"><!-- sharing links version 1-->
 <div class='drop bg-mygrad round tc-black'><span class='Pad-16px icon ai-share cal-ho-splash P-ho-border round'/><div class='down P-br4px P-bs2 P-b0 P-r0 Mgin-r24px Mgin-b24px P-zi1 cor-menu bg-subbackground'><ul><li><a expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-facebook'/> Facebook</a></li><li><a expr:href='&quot;https://twitter.com/share?url=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title + &quot;&amp;via=amritcrome&quot;' rel='noopener' target='_blank'><span class='icon ai-twitter'/> Twitter</a></li><li><b:if cond='data:blog.isMobile == &quot;true&quot;'><a expr:href='&quot;whatsapp://send?text=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon ai-whatsapp'/> Whatsapp</a><b:else/><a expr:href='&quot;https://web.whatsapp.com/send?text=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon ai-whatsapp'/> Whatsapp</a></b:if></li><li><a expr:href='&quot;httpS://pinterest.com/pin/create/bookmarklet/?url=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-pinterest'/> Pinterest</a></li><li class='icongroup'><a expr:href='&quot;http://tumblr.com/widgets/share/tool?canonicalUrl=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-tumblr'/></a><a expr:href='&quot;https://vk.com/share.php?url=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-vk'/></a><a expr:href='&quot;http://www.linkedin.com/shareArticle?mini=true&amp;url=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-linkedin'/></a><a expr:href='&quot;https://www.reddit.com/submit?url=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon ai-reddit'/></a></li></ul></div></div></div>
-                                    </div>
+                                    </div></div>
 									<b:if cond='data:post.body'>
                                                     <data:post.body/>
                                                 </b:if>
@@ -774,7 +785,7 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
         </div>
 		
-      <footer class='footer Pad-t24px fixbox P-bs2 Mgin-t56px Mgin-b56px P-br8px'>
+      <footer class='footer P-dn Pad-t24px fixbox P-bs2 Mgin-t56px Mgin-b56px P-br8px'>
 		<!-- custom version 1-->
 		<div class='flexbox P-df-aic box-100p Pad-24px'>
 		<div class='box-100p box-60p-tab Pad-r16px Pad-l16px P-fs16px'>
