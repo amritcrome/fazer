@@ -157,7 +157,39 @@
     <meta content='#ffffff' name='apple-mobile-web-app-status-bar-style'/>
 	
     <link href='https://dl.dropboxusercontent.com/s/gx4ispdflrjbdsp/amritcrome-particle-v1.css' rel='stylesheet' type='text/css'/>
-    <style>
+   <link href='https://fonts.googleapis.com/css2?family=Work+Sans&amp;display=swap' rel='stylesheet'/>
+	<style>
+	
+:root {
+  --ac-txt: #3c4043;
+  --ac-subtxt: #757575;
+  --ac-link: #4caf50;
+  --ac-btn: #4caf50;
+  --ac-linkho: #009688;
+  --ac-bg: #fff;
+  --ac-subbg: #f1efef;
+  --ac-bginverse: #e8f5e9;
+  --particle-tablebc: silver;
+  --ac-mirtc:#bdbdbd;
+  --ac-mirbg:#000
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ac-txt: #bdbdbd;
+    --ac-subtxt: #9f9f9f;
+    --ac-link: #4caf50;
+    --ac-btn: #4caf50;
+    --ac-linkho: #009688;
+    --ac-bg: #1d1d1d;
+    --ac-subbg: #222;
+    --ac-bginverse: #294b2b;
+    --particle-tablebc: silver;
+	--ac-mirtc:#3c4043;
+	--ac-mirbg:#fff
+  }
+}	
+	html{scroll-behaviour:smooth;overflow-wrap:break-word;word-break:break-word;word-wrap:break-word;text-rendering:optimizeSpeed;color:var(--ac-txt);background:var(--ac-bg);-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'Work Sans',-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Tahoma,Verdana,Arial,Georgia,Times new roman,sans-serif;font-size:16px;color:var(--ac-txt);overflow-x:hidden;text-align:left;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
 
 .mh200px{min-height:200px}
 
@@ -184,9 +216,9 @@
 }
 
 #indicator > div {
-  background-color: white;
-  width:8px;
-  height:8px;
+  background-color: var(--ac-link);
+  width:5px;
+  height:5px;
   border-radius: 5px;
   margin: 10px;
   cursor: pointer;
@@ -562,8 +594,8 @@ document.addEventListener("DOMContentLoaded", function() {
                                     </div>
                                     <b:else/>
                                     <!--this is post starting-->
-									<div class="bigbox P-oa">
-                                    <div class='Pad-24px box-100p box-h100vh home-post-slider'>
+									<div class="P-df P-sstxm P-oa">
+                                    <div class='Pad-24px box-100p box-h100vh home-post-slider P-pr P-ssac'>
                                         <div class='cc-header P-dn box-full'>
                                             <div class='chip box-100p'>
                                                 <div class='chip-txt-func'>
@@ -675,8 +707,8 @@ document.addEventListener("DOMContentLoaded", function() {
                                              
                                             </script>
                                         </div>
-										<div class="P-pa P-r0 P-b0 Mgin-24px P-zi1"><!-- sharing links version 1-->
-<div class='drop icon-holder bg-mygrad round tc-black'><span class='chip-icon ai-share cal-ho-splash P-ho-border round'/><div class='down P-br4px P-bs2 P-b0 P-r0 Mgin-r24px Mgin-b24px P-zi1 cor-menu bg-subbackground'><ul><li><a expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-facebook'/> Facebook</a></li><li><a expr:href='&quot;https://twitter.com/share?url=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title + &quot;&amp;via=amritcrome&quot;' rel='noopener' target='_blank'><span class='icon ai-twitter'/> Twitter</a></li><li><b:if cond='data:blog.isMobile == &quot;true&quot;'><a expr:href='&quot;whatsapp://send?text=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon ai-whatsapp'/> Whatsapp</a><b:else/><a expr:href='&quot;https://web.whatsapp.com/send?text=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon ai-whatsapp'/> Whatsapp</a></b:if></li><li><a expr:href='&quot;httpS://pinterest.com/pin/create/bookmarklet/?url=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-pinterest'/> Pinterest</a></li><li class='icongroup'><a expr:href='&quot;http://tumblr.com/widgets/share/tool?canonicalUrl=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-tumblr'/></a><a expr:href='&quot;https://vk.com/share.php?url=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-vk'/></a><a expr:href='&quot;http://www.linkedin.com/shareArticle?mini=true&amp;url=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-linkedin'/></a><a expr:href='&quot;https://www.reddit.com/submit?url=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon ai-reddit'/></a></li></ul></div></div></div>
+										<div class="P-pa P-r0 P-b0 Mgin-24px Mgin-b24px P-zi1"><!-- sharing links version 1-->
+<div class='drop bg-mygrad round tc-black'><span class='Pad-16px icon ai-share cal-ho-splash P-ho-border round'/><div class='down P-br4px P-bs2 P-b0 P-r0 Mgin-r24px Mgin-b24px P-zi1 cor-menu bg-subbackground'><ul><li><a expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-facebook'/> Facebook</a></li><li><a expr:href='&quot;https://twitter.com/share?url=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title + &quot;&amp;via=amritcrome&quot;' rel='noopener' target='_blank'><span class='icon ai-twitter'/> Twitter</a></li><li><b:if cond='data:blog.isMobile == &quot;true&quot;'><a expr:href='&quot;whatsapp://send?text=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon ai-whatsapp'/> Whatsapp</a><b:else/><a expr:href='&quot;https://web.whatsapp.com/send?text=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon ai-whatsapp'/> Whatsapp</a></b:if></li><li><a expr:href='&quot;httpS://pinterest.com/pin/create/bookmarklet/?url=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-pinterest'/> Pinterest</a></li><li class='icongroup'><a expr:href='&quot;http://tumblr.com/widgets/share/tool?canonicalUrl=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-tumblr'/></a><a expr:href='&quot;https://vk.com/share.php?url=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-vk'/></a><a expr:href='&quot;http://www.linkedin.com/shareArticle?mini=true&amp;url=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon ai-linkedin'/></a><a expr:href='&quot;https://www.reddit.com/submit?url=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon ai-reddit'/></a></li></ul></div></div></div>
                                     </div>
 									<b:if cond='data:post.body'>
                                                     <data:post.body/>
@@ -707,7 +739,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </b:if>
 								
-                                <div class='bigbox P-oa'>
+                                <div class='P-df P-sstxm P-oa'>
                                    
                                         <b:if cond='data:blog.metaDescription'><p class='sub-hdg'>
         <data:blog.metaDescription/></p>
