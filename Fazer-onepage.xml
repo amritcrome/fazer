@@ -293,11 +293,20 @@ html{scroll-behaviour:smooth;overflow-wrap:break-word;word-break:break-word;word
 							<b:if cond='data:blog.url == data:blog.homepageUrl'>
 							<section class='fz-home box-h100vh Pad-24px P-oh P-pr box-100p'>
 							<div class="Mgin-t56px Pad-t24px">
+                                homepage
 							<a href="https://amritcrome.com/label/animad">Animad</a>
-							   <b:include data='top' name='status-message'/>
+							   
 							   </div>
 							   </section>
+                               <b:else/>
+                               <b:if cond='data:blog.searchLabel'>
+                                <b:if cond='data:blog.searchLabel == "Animad"'>
+                               <section class='fz-home box-h100vh Pad-24px P-oh P-pr box-100p'>
+                               <b:include data='top' name='status-message'/>
+                               </section>
 							   </b:if>
+                               </b:if>
+                            </b:if>
                             <!-- posts -->
 							
                             <b:if cond='data:blog.pageType != &quot;error_page&quot;'>
@@ -530,12 +539,12 @@ html{scroll-behaviour:smooth;overflow-wrap:break-word;word-break:break-word;word
                                       
                                         <div class='fz-content'>
 										<div class='Pad-t24px'>
-                                                <b:if cond='data:top.showPostLabels and data:post.labels'>
-                                                    <b:if cond='data:post.labels'>
+<b:if cond='data:top.showPostLabels and data:post.labels'>
+<b:if cond='data:post.labels'>
       <b:loop values='data:post.labels' var='label'>
          <b:if cond='data:label.name == "Animad"'>
             <div>
-Hi This means this label is animad
+Animad label on homepage
             </div>
          </b:if>
       </b:loop>
@@ -598,7 +607,7 @@ Hi This means this label is animad
                                                     </b:loop>
                                                 </div>
                                             </b:if>
-                                            <h1 class='Mgin-t24px f48px' itemprop='name'>
+                                            <h1 class='Mgin-t24px box-60p-lap box-70p-tab f48px' itemprop='name'>
                                                 <b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'>
                                                     <a expr:href='data:post.link ? data:post.link : data:post.url'>
                                                         <b:if cond='data:post.title'>
@@ -620,9 +629,15 @@ Hi This means this label is animad
                                                 </b:if>
                                             </h1>
                                            
-                                     <b:if cond='data:post.dateHeader'>
-                                                                <data:post.dateHeader/>
-                                                            </b:if>
+                                            <b:if cond='data:post.hasJumpLink'>
+                                                <a class='P-dib Pad-b16px Pad-t24px' expr:href='data:post.url + &quot;#more&quot;' expr:title='data:post.title'>
+                                                    <data:post.jumpText/>  &#187;
+                                                </a>
+                                                <b:else/>
+                                                <a class='P-dib Pad-b16px Pad-t24px' expr:href='data:post.url'>
+                                                    <data:post.jumpText/>  &#187;
+                                                </a>
+                                            </b:if>
                                                 
                                           
                                             
