@@ -144,7 +144,7 @@
     <meta content='yes' name='apple-mobile-web-app-capable'/>
     <meta content='#ffffff' name='apple-mobile-web-app-status-bar-style'/>
 	
-    <link href='https://dl.dropboxusercontent.com/s/gx4ispdflrjbdsp/amritcrome-particle-v1.css' rel='stylesheet' type='text/css'/>
+    <link href='https://amritcrome.github.io/Particle/Assets/Particle-v1/particle-v1.css' rel='stylesheet' type='text/css'/>
    <link href='https://fonts.googleapis.com/css2?family=Work+Sans&amp;display=swap' rel='stylesheet'/>
 	<style>
 	
