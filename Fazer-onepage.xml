@@ -1,72 +1,75 @@
 <!DOCTYPE html>
 <html>
-&lt;head&gt;
-<!-- [ Meta Tag SEO ] -->
-    <meta charset='utf-8'/>
-    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
-    <meta content='IE=9; IE=8; IE=7; IE=EDGE; chrome=1' http-equiv='X-UA-Compatible'/>
-    <meta content='Amritcrome' name='generator'/>
-    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
-    <link href='http://www.blogger.com/openid-server.g' rel='openid.server'/>
-    <link expr:href='data:blog.homepageUrl' rel='openid.delegate'/>
-    <link expr:href='data:blog.canonicalUrl' rel='canonical'/>
+    &lt;head&gt;
+    <!-- [ Meta Tag SEO ] -->
+    <meta charset='utf-8' />
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport' />
+    <meta content='IE=9; IE=8; IE=7; IE=EDGE; chrome=1' http-equiv='X-UA-Compatible' />
+    <meta content='Amritcrome' name='generator' />
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    <link href='http://www.blogger.com/openid-server.g' rel='openid.server' />
+    <link expr:href='data:blog.homepageUrl' rel='openid.delegate' />
+    <link expr:href='data:blog.canonicalUrl' rel='canonical' />
     <b:if cond='data:blog.pageType != &quot;error_page&quot;'>
         <b:if cond='data:blog.pageType == &quot;archive&quot;'>
             <title>
-                <data:blog.title/> | Showing all posts on date - 
-                 
-                <data:blog.pageName/>
+                <data:blog.title />
+                | Showing all posts on date -
+                <data:blog.pageName />
             </title>
-            <b:else/>
+            <b:else />
             <b:if cond='data:blog.pageType == &quot;index&quot;'>
                 <b:if cond='data:blog.searchLabel'>
                     <title>
-                        <data:blog.title/> | Explore every post in <data:blog.searchLabel/> category 
+                        <data:blog.title />
+                        | Explore every post in
+                        <data:blog.searchLabel />
+                        category
                     </title>
-                    <b:else/>
+                    <b:else />
                     <b:if cond='data:blog.url == data:blog.homepageUrl'>
                         <title>
-                            <data:blog.title/>
+                            <data:blog.title />
                         </title>
-                        <b:else/>
+                        <b:else />
                         <title>
-                            <data:blog.title/>: 
-                             
-                            <data:blog.pageName/>
+                            <data:blog.title />
+                            :
+                            <data:blog.pageName />
                         </title>
                     </b:if>
                 </b:if>
-                <b:else/>
+                <b:else />
                 <title>
-                    <data:blog.title/>: 
-                     
-                    <data:blog.pageName/>
+                    <data:blog.title />
+                    :
+                    <data:blog.pageName />
                 </title>
             </b:if>
         </b:if>
-        <b:elseif cond='data:blog.pageType == &quot;error_page&quot;'/>
+        <b:elseif cond='data:blog.pageType == &quot;error_page&quot;' />
         <title>
-            <data:blog.title/>Fazer 404 - Page Not Found | 
-             
-            <data:blog.pageName/>
+            <data:blog.title />
+            Fazer 404 - Page Not Found |
+            <data:blog.pageName />
         </title>
     </b:if>
     <b:if cond='data:blog.pageType != &quot;error_page&quot;'>
-        <meta expr:content='data:blog.metaDescription' name='description'/>
-        <script type='application/ld+json'>{ &quot;@context&quot;: &quot;http://schema.org&quot;, &quot;@type&quot;: &quot;WebSite&quot;, &quot;url&quot;: &quot;
-             
-            <data:blog.homepageUrl/>&quot;, &quot;potentialAction&quot;: { &quot;@type&quot;: &quot;SearchAction&quot;, &quot;target&quot;: &quot;
-             
-            <data:blog.homepageUrl/>?q={search_term}&quot;, &quot;query-input&quot;: &quot;required name=search_term&quot; } }
-         
+        <meta expr:content='data:blog.metaDescription' name='description' />
+        <script type='application/ld+json'>
+            { &quot;@context&quot;: &quot;http://schema.org&quot;, &quot;@type&quot;: &quot;WebSite&quot;, &quot;url&quot;: &quot;
+            <data:blog.homepageUrl />
+            &quot;, &quot;potentialAction&quot;: { &quot;@type&quot;: &quot;SearchAction&quot;, &quot;target&quot;: &quot;
+            <data:blog.homepageUrl />
+            ?q={search_term}&quot;, &quot;query-input&quot;: &quot;required name=search_term&quot; } }
         </script>
     </b:if>
     <b:if cond='data:blog.url == data:blog.homepageUrl'>
-        <meta content='Amritcrome, Blog, Friends' name='keywords'/>
+        <meta content='Amritcrome, Blog, Friends' name='keywords' />
     </b:if>
-    <link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
-    <link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default?alt=rss&quot;' expr:title='data:blog.title + &quot; - RSS&quot;' rel='alternate' type='application/rss+xml'/>
-    <link expr:href='&quot;http://www.blogger.com/feeds/&quot; + data:blog.blogId + &quot;/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
+    <link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml' />
+    <link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default?alt=rss&quot;' expr:title='data:blog.title + &quot; - RSS&quot;' rel='alternate' type='application/rss+xml' />
+    <link expr:href='&quot;http://www.blogger.com/feeds/&quot; + data:blog.blogId + &quot;/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml' />
     <!--[if IE]>
     <script>(function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })();
      
@@ -74,79 +77,80 @@
     <![endif]-->
     <b:if cond='data:blog.pageType == &quot;item&quot;'>
         <b:if cond='data:blog.postImageThumbnailUrl'>
-            <link expr:href='data:blog.postImageThumbnailUrl' rel='image_src'/>
+            <link expr:href='data:blog.postImageThumbnailUrl' rel='image_src' />
         </b:if>
     </b:if>
-	
-    <link expr:href='data:blog.url' hreflang='x-default' rel='alternate'/>
-    <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
-	
+    <link expr:href='data:blog.url' hreflang='x-default' rel='alternate' />
+    <link href='/favicon.ico' rel='icon' type='image/x-icon' />
+
+
     <!-- [ Social Media Meta Tag ] -->
     <b:if cond='data:blog.url == data:blog.homepageUrl'>
         <b:if cond='data:blog.pageType == &quot;item&quot;'>
             <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
                 <b:if cond='data:blog.url'>
-                    <meta expr:content='data:blog.url' property='og:url'/>
+                    <meta expr:content='data:blog.url' property='og:url' />
                 </b:if>
-                <meta expr:content='data:blog.title' property='og:site_name'/>
+                <meta expr:content='data:blog.title' property='og:site_name' />
                 <b:if cond='data:blog.pageName'>
-                    <meta expr:content='data:blog.pageName' property='og:title'/>
+                    <meta expr:content='data:blog.pageName' property='og:title' />
                 </b:if>
             </b:if>
         </b:if>
     </b:if>
-    <meta expr:content='data:blog.pageTitle' property='og:title'/>
+    <meta expr:content='data:blog.pageTitle' property='og:title' />
     <b:if cond='data:blog.pageType == &quot;item&quot;'>
-        <meta content='article' property='og:type'/>
-        <b:else/>
-        <meta content='website' property='og:type'/>
+        <meta content='article' property='og:type' />
+        <b:else />
+        <meta content='website' property='og:type' />
     </b:if>
-    <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
+    <meta expr:content='data:blog.canonicalUrl' property='og:url' />
     <b:if cond='data:blog.postImageUrl'>
-        <meta expr:content='data:blog.postImageUrl' property='og:image'/>
-        <b:else/>
+        <meta expr:content='data:blog.postImageUrl' property='og:image' />
+        <b:else />
         <b:if cond='data:blog.postImageThumbnailUrl'>
-            <meta expr:content='data:blog.postThumbnailUrl' property='og:image'/>
-            <b:else/>
-            <meta content='https://1.bp.blogspot.com/-68lj3W6eemg/XI1QxnYc8_I/AAAAAAAANHk/38uaGDysO3k_PtcKAhqLPqCkOmEAUvlEgCPcBGAYYCw/s1600/amritcrome%2BFazer.jpg' property='og:image'/>
+            <meta expr:content='data:blog.postThumbnailUrl' property='og:image' />
+            <b:else />
+            <meta content='https://1.bp.blogspot.com/-68lj3W6eemg/XI1QxnYc8_I/AAAAAAAANHk/38uaGDysO3k_PtcKAhqLPqCkOmEAUvlEgCPcBGAYYCw/s1600/amritcrome%2BFazer.jpg' property='og:image' />
         </b:if>
     </b:if>
     <b:if cond='data:blog.metaDescription'>
-        <meta expr:content='data:blog.metaDescription' property='og:description'/>
-        <b:else/>
-        <meta content='Amritcrome | Do things in a way that was never seen before' property='og:description'/>
+        <meta expr:content='data:blog.metaDescription' property='og:description' />
+        <b:else />
+        <meta content='Amritcrome | Do things in a way that was never seen before' property='og:description' />
     </b:if>
-    <meta expr:content='data:blog.title' property='og:site_name'/>
-    <meta content='https://www.facebook.com/cromeamrit' property='article:author'/>
-    <meta content='https://www.facebook.com/cromeamrit' property='article:publisher'/>
-    <meta content='en_US' property='og:locale'/>
-    <meta content='en_GB' property='og:locale:alternate'/>
-    <meta content='summary_large_image' name='twitter:card'/>
-    <meta expr:content='data:blog.pageTitle' name='twitter:title'/>
-    <meta content='@Amritcrome' name='twitter:site'/>
-    <meta content='@Amritcrome' name='twitter:creator'/>
-	<meta content='77dfecb2b38e2aa5eb02f49682d7c720' name='p:domain_verify'/>
-&lt;!-- 
-     
-    <b:skin><![CDATA[
+    <meta expr:content='data:blog.title' property='og:site_name' />
+    <meta content='https://www.facebook.com/cromeamrit' property='article:author' />
+    <meta content='https://www.facebook.com/cromeamrit' property='article:publisher' />
+    <meta content='en_US' property='og:locale' />
+    <meta content='en_GB' property='og:locale:alternate' />
+    <meta content='summary_large_image' name='twitter:card' />
+    <meta expr:content='data:blog.pageTitle' name='twitter:title' />
+    <meta content='@Amritcrome' name='twitter:site' />
+    <meta content='@Amritcrome' name='twitter:creator' />
+    <meta content='77dfecb2b38e2aa5eb02f49682d7c720' name='p:domain_verify' />
+    &lt;!--
+    <b:skin>
+        <![CDATA[
          
           
      
-    ]]></b:skin>
-    <link href='/favicon.ico' rel='apple-touch-icon'/>
+    ]]>
+    </b:skin>
+    <link href='/favicon.ico' rel='apple-touch-icon' />
     <!-- Chrome, Firefox OS and Opera -->
-    <meta content='yes' name='mobile-web-app-capable'/>
-    <meta content='#ffffff' name='theme-color'/>
+    <meta content='yes' name='mobile-web-app-capable' />
+    <meta content='#ffffff' name='theme-color' />
     <!-- Windows Phone -->
-    <meta content='#ffffff' name='msapplication-navbutton-color'/>
+    <meta content='#ffffff' name='msapplication-navbutton-color' />
     <!-- iOS Safari -->
-    <meta content='yes' name='apple-mobile-web-app-capable'/>
-    <meta content='#ffffff' name='apple-mobile-web-app-status-bar-style'/>
-	
-    <link href='https://amritcrome.github.io/Particle/Assets/Particle-v1/particle-v1.css' rel='stylesheet' type='text/css'/>
-   <link href='https://fonts.googleapis.com/css2?family=Work+Sans&amp;display=swap' rel='stylesheet'/>
-	<style>
+    <meta content='yes' name='apple-mobile-web-app-capable' />
+    <meta content='#ffffff' name='apple-mobile-web-app-status-bar-style' />
+
+    <link href='https://amritcrome.github.io/Particle/Assets/Particle-v1/particle-v1.css' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css2?family=Work+Sans&amp;display=swap' rel='stylesheet' />
+    <style>
 	
 :root {
   --ac-txt: #fff;
@@ -210,557 +214,725 @@ html{scroll-behaviour:smooth;overflow-wrap:break-word;word-break:break-word;word
 @media (min-width: 1200px){lap}
 
     </style>
-<script src="https://kit.fontawesome.com/30d80d0e10.js" crossorigin="anonymous"></script>
-&lt;/head&gt;&lt;!--
-<head/>--&gt;
-<body class='darko'>
-        <!--fazer header-->  
+    <script src="https://kit.fontawesome.com/30d80d0e10.js" crossorigin="anonymous"></script>
+    &lt;/head&gt;&lt;!--
+    <head />
+    --&gt;
+    <body class='darko'>
+        <!--fazer header-->
         <div class='P-section'>
             <div class='flexbox P-ma'>
-			<!--fazer -->
-			<b:section class="P-dn" id='leftone' name='left' showaddelement='yes'>
-<b:widget id='PageList2' locked='true' mobile='yes' title='Pages' type='PageList' version='1'>
-  <b:widget-settings>
-    <b:widget-setting name='pageListJson'><![CDATA[{'3812960179960391523': {'href': 'https://particle.amritcrome.com/p/how-to-create-and-use-particle-class.html', 'title': 'How to create and use a Particle Class.', 'position': 0}, '8984768463021713060': {'href': 'https://particle.amritcrome.com/p/particle-p-classes.html', 'title': 'Particle  P-Classes', 'position': 1}, '1395815746492519104': {'href': 'https://particle.amritcrome.com/p/particle.html', 'title': 'Value based classes', 'position': 2}, '4189253833579585061': {'href': 'https://particle.amritcrome.com/p/particle-buttons.html', 'title': 'Particle Buttons', 'position': 3}, '6061453477919636137': {'href': 'https://particle.amritcrome.com/p/particle-effects.html', 'title': 'Particle Effects', 'position': 4}, '2425680432135375213': {'href': 'https://particle.amritcrome.com/p/particle-chips.html', 'title': 'Particle Chips', 'position': 5}, '3415900426798633458': {'href': 'https://particle.amritcrome.com/p/particle-cards.html', 'title': 'Particle Cards', 'position': 6}}]]></b:widget-setting>
-    <b:widget-setting name='homeTitle'>Home</b:widget-setting>
-  </b:widget-settings>
-  <b:includable id='main'>
-							<!-- <b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>-->
-					<div class='chip box-100p Pad-8px'><div class='chip-txt-func'><div class='chip-img bg-mygrad tc-white round'><i class='chip-icon ai-amritcrome'/></div><div class='chip-author P-tac'> <a expr:href='data:blog.homepageUrl'><data:blog.title/></a></div>  <div class='chip-img-func'>
-							<div class='P-search'><span class='P-search-icon ai-search-o'/>
-							<form action='/search' expr:class='data:view.isSearch ? &quot;P-expand round P-bs2 active&quot; : &quot;P-expand round P-bs2&quot;' target='_top'>
-                              <input autocomplete='off' autofocus='autofocus' expr:value='data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;' name='q' placeholder='What are you looking for?' size='10' title='search' type='text'/><button class='P-search-icon ai-search-o' type='submit'/></form></div>
-						
-                                            </div>
-											</div></div>
-											
-											
-										<div class="navbar Mgin-t24px">
-										<div class="hamburger box-100p">
-										<span class="icon-holder ai-bars-o"></span><span class="P-fwb">Menu</span>
-										<div class="menu">
-										<div class="cor-menu-mod box-100p P-wsnw P-tal">
-									
-										<ul>
-									<b:loop values='data:links' var='link'>
-										<li>
-											<b:class cond='data:link.isCurrentPage' name='active'/>
-											<a expr:href='data:link.href'>
-												<data:link.title/>
-											</a>
-										</li>
-									</b:loop>
-								</ul>
-										
-								
-							</div></div></div></div>
-						</b:includable>
-</b:widget>
-</b:section>
-<div class="P-pf P-l0 P-r0 P-t0 Mgin-t8px P-zi1 P-tac"><a class="P-bs2 icon-holder Pad-8px bg-mirror round tc-black tc-white" href="https://neptarg.blogspot.com/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.18 45.71" class=""><title>amritcrome</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M43.7,44.59l3.48-2L22.94,0,15.88,14a12,12,0,0,0-3.35-.47A12.52,12.52,0,0,0,4.82,35.92l-4,8,3.57,1.8,4-7.85a12.53,12.53,0,0,0,11.2-22.19l3.63-7.21ZM4,26.06a8.54,8.54,0,0,1,8.53-8.53,9.29,9.29,0,0,1,1.5.13L6.68,32.24A8.43,8.43,0,0,1,4,26.06Zm17.05,0a8.52,8.52,0,0,1-10.9,8.18l7.54-15A8.53,8.53,0,0,1,21.05,26.06Z"></path></g></g></svg></a></div>
-                <b:section class='box-100p bg-subbackground' id='main' name='Main' showaddelement='no'>
-                  <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1'>
-                    <b:widget-settings>
-                      <b:widget-setting name='showDateHeader'>true</b:widget-setting>
-                      <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
-                      <b:widget-setting name='showShareButtons'>true</b:widget-setting>
-                      <b:widget-setting name='authorLabel'>By</b:widget-setting>
-                      <b:widget-setting name='showCommentLink'>false</b:widget-setting>
-                      <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
-                      <b:widget-setting name='showAuthor'>true</b:widget-setting>
-                      <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
-                      <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
-                      <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-                      <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-                      <b:widget-setting name='timestampLabel'>on</b:widget-setting>
-                      <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
-                      <b:widget-setting name='style.layout'>1x1</b:widget-setting>
-                      <b:widget-setting name='showLabels'>true</b:widget-setting>
-                      <b:widget-setting name='showLocation'>false</b:widget-setting>
-                      <b:widget-setting name='showTimestamp'>true</b:widget-setting>
-                      <b:widget-setting name='postsPerAd'>1</b:widget-setting>
-                      <b:widget-setting name='showBacklinks'>true</b:widget-setting>
-                      <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
-                      <b:widget-setting name='showInlineAds'>false</b:widget-setting>
-                      <b:widget-setting name='showReactions'>false</b:widget-setting>
-                    </b:widget-settings>
-                    <b:includable id='main' var='top'>
-                         
-							<!--homepage-->
-							 <b:if cond='data:blog.url == data:blog.homepageUrl'>
+                <!--fazer -->
+                <b:section class="P-dn" id='leftone' name='left' showaddelement='yes'>
+                    <b:widget id='PageList2' locked='true' mobile='yes' title='Pages' type='PageList' version='1'>
+                        <b:widget-settings>
+                            <b:widget-setting name='pageListJson'>
+                                <![CDATA[{'3812960179960391523': {'href': 'https://particle.amritcrome.com/p/how-to-create-and-use-particle-class.html', 'title': 'How to create and use a Particle Class.', 'position': 0}, '8984768463021713060': {'href': 'https://particle.amritcrome.com/p/particle-p-classes.html', 'title': 'Particle  P-Classes', 'position': 1}, '1395815746492519104': {'href': 'https://particle.amritcrome.com/p/particle.html', 'title': 'Value based classes', 'position': 2}, '4189253833579585061': {'href': 'https://particle.amritcrome.com/p/particle-buttons.html', 'title': 'Particle Buttons', 'position': 3}, '6061453477919636137': {'href': 'https://particle.amritcrome.com/p/particle-effects.html', 'title': 'Particle Effects', 'position': 4}, '2425680432135375213': {'href': 'https://particle.amritcrome.com/p/particle-chips.html', 'title': 'Particle Chips', 'position': 5}, '3415900426798633458': {'href': 'https://particle.amritcrome.com/p/particle-cards.html', 'title': 'Particle Cards', 'position': 6}}]]>
+                            </b:widget-setting>
+                            <b:widget-setting name='homeTitle'>Home</b:widget-setting>
+                        </b:widget-settings>
+                        <b:includable id='main'>
+                            <!-- <b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>-->
+                            <div class='chip box-100p Pad-8px'>
+                                <div class='chip-txt-func'>
+                                    <div class='chip-img bg-mygrad tc-white round'>
+                                        <i class='chip-icon ai-amritcrome' />
+                                    </div>
+                                    <div class='chip-author P-tac'>
+                                        <a expr:href='data:blog.homepageUrl'>
+                                            <data:blog.title />
+                                        </a>
+                                    </div>
+                                    <div class='chip-img-func'>
+                                        <div class='P-search'>
+                                            <span class='P-search-icon ai-search-o' />
+                                            <form action='/search' expr:class='data:view.isSearch ? &quot;P-expand round P-bs2 active&quot; : &quot;P-expand round P-bs2&quot;' target='_top'>
+                                                <input autocomplete='off' autofocus='autofocus' expr:value='data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;' name='q' placeholder='What are you looking for?' size='10' title='search' type='text' />
+                                                <button class='P-search-icon ai-search-o' type='submit' />
+                                            </form>
+                                        </div>
 
-</b:if>
-							<b:if cond='data:blog.url == data:blog.homepageUrl'>
-							<section class='fz-home box-h100vh Pad-24px P-oh P-pr box-100p'>
-							<div class="Mgin-t56px Pad-t24px">
-                                homepage
-							<a href="https://amritcrome.com/label/animad">Animad</a>
-							   
-							   </div>
-							   </section>
-                               <b:else/>
-                               <b:if cond='data:blog.searchLabel'>
-                                <b:if cond='data:blog.searchLabel == "Animad"'>
-                               <section class='fz-home box-h100vh Pad-24px P-oh P-pr box-100p'>
-                               <b:include data='top' name='status-message'/>
-                               </section>
-							   </b:if>
-                               </b:if>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="navbar Mgin-t24px">
+                                <div class="hamburger box-100p">
+                                    <span class="icon-holder ai-bars-o"></span>
+                                    <span class="P-fwb">Menu</span>
+                                    <div class="menu">
+                                        <div class="cor-menu-mod box-100p P-wsnw P-tal">
+
+                                            <ul>
+                                                <b:loop values='data:links' var='link'>
+                                                    <li>
+                                                        <b:class cond='data:link.isCurrentPage' name='active' />
+                                                        <a expr:href='data:link.href'>
+                                                            <data:link.title />
+                                                        </a>
+                                                    </li>
+                                                </b:loop>
+                                            </ul>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </b:includable>
+                    </b:widget>
+                </b:section>
+                <div class="P-pf P-l0 P-r0 P-t0 Mgin-t8px P-zi1 P-tac">
+                    <a class="P-bs2 icon-holder Pad-8px bg-mirror round tc-black tc-white" expr:href='data:post.url'>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.18 45.71" class="">
+                            <title>amritcrome</title>
+                            <g id="Layer_2" data-name="Layer 2">
+                                <g id="Layer_1-2" data-name="Layer 1">
+                                    <path d="M43.7,44.59l3.48-2L22.94,0,15.88,14a12,12,0,0,0-3.35-.47A12.52,12.52,0,0,0,4.82,35.92l-4,8,3.57,1.8,4-7.85a12.53,12.53,0,0,0,11.2-22.19l3.63-7.21ZM4,26.06a8.54,8.54,0,0,1,8.53-8.53,9.29,9.29,0,0,1,1.5.13L6.68,32.24A8.43,8.43,0,0,1,4,26.06Zm17.05,0a8.52,8.52,0,0,1-10.9,8.18l7.54-15A8.53,8.53,0,0,1,21.05,26.06Z"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <b:section class='box-100p bg-subbackground' id='main' name='Main' showaddelement='no'>
+                    <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1'>
+                        <b:widget-settings>
+                            <b:widget-setting name='showDateHeader'>true</b:widget-setting>
+                            <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
+                            <b:widget-setting name='showShareButtons'>true</b:widget-setting>
+                            <b:widget-setting name='authorLabel'>By</b:widget-setting>
+                            <b:widget-setting name='showCommentLink'>false</b:widget-setting>
+                            <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
+                            <b:widget-setting name='showAuthor'>true</b:widget-setting>
+                            <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
+                            <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
+                            <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+                            <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+                            <b:widget-setting name='timestampLabel'>on</b:widget-setting>
+                            <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+                            <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+                            <b:widget-setting name='showLabels'>true</b:widget-setting>
+                            <b:widget-setting name='showLocation'>false</b:widget-setting>
+                            <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+                            <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+                            <b:widget-setting name='showBacklinks'>true</b:widget-setting>
+                            <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+                            <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+                            <b:widget-setting name='showReactions'>false</b:widget-setting>
+                        </b:widget-settings>
+                        <b:includable id='main' var='top'>
+
+                            <!--homepage-->
+                            <b:if cond='data:blog.url == data:blog.homepageUrl'></b:if>
+                            <b:if cond='data:blog.url == data:blog.homepageUrl'>
+                                <section class='fz-home box-h100vh Pad-24px P-oh P-pr box-100p'>
+                                    <div class="Mgin-t56px Pad-t24px">
+                                        homepage
+                                        <a expr:href='data:post.url + &quot;animad&quot;'>Animad</a>
+
+                                    </div>
+                                </section>
+                                <b:else />
+                                <b:if cond='data:blog.searchLabel'>
+                                    <b:if cond='data:blog.searchLabel == "Animad"'>
+                                        <section class='fz-home box-h100vh Pad-24px P-oh P-pr box-100p'>
+                                            <b:include data='top' name='status-message' />
+                                        </section>
+                                    </b:if>
+                                </b:if>
                             </b:if>
                             <!-- posts -->
-							
+
                             <b:if cond='data:blog.pageType != &quot;error_page&quot;'>
-                               
-                                    <b:loop values='data:posts' var='post'>
-                                        <b:if cond='data:post.isFirstPost'>
-                                            <b:if cond='data:blog.pageType == &quot;index&quot; or data:blog.pageType == &quot;archive&quot;'>
-                                                <section class='fz-heropost box-h100vh P-oh P-pr box-100p'>
-                                                    <b:include data='post' name='post'/>
-                                                </section>
-                                                <b:else/>
-                                                 
-                                                    <b:include data='post' name='post'/>
-                                                 
-                                            </b:if>
-                                            <b:else/>
-                                            <section class='fz-post box-h100vh P-oh P-pr box-100p'>
-                                                <b:include data='post' name='post'/>
+
+                                <b:loop values='data:posts' var='post'>
+                                    <b:if cond='data:post.isFirstPost'>
+                                        <b:if cond='data:blog.pageType == &quot;index&quot; or data:blog.pageType == &quot;archive&quot;'>
+                                            <section class='fz-heropost box-h100vh P-oh P-pr box-100p'>
+                                                <b:include data='post' name='post' />
                                             </section>
-													
+                                            <b:else />
+
+                                            <b:include data='post' name='post' />
 
                                         </b:if>
-                                        <!-- Ad -->
-                                        <b:if cond='data:post.includeAd'>
-                                            <div class='inline-ad'>
-                                                <data:adCode/>
+                                        <b:else />
+                                        <section class='fz-post box-h100vh P-oh P-pr box-100p'>
+                                            <b:include data='post' name='post' />
+                                        </section>
+
+
+                                    </b:if>
+                                    <!-- Ad -->
+                                    <b:if cond='data:post.includeAd'>
+                                        <div class='inline-ad'>
+                                            <data:adCode />
+                                        </div>
+                                    </b:if>
+
+                                </b:loop>
+
+                                <b:if cond='data:numPosts == 0'>
+                                    <div class='Pad-24px box-100p noresults'></div>
+                                </b:if>
+
+                                <b:if cond='data:blog.url == data:blog.homepageUrl'>
+                                    <section class='fz-footer box-h100vh P-oh P-pr home-post-slider box-100p'>
+                                        <!-- custom version 1-->
+                                        <div class='Pad-24px box-100p box-h100vh box-w100vw footer-slider P-pr P-ssac'>
+
+
+                                            <div class="P-tac Mgin-t56px">
+
+                                                <a class='icon-holder P-bs2 round P-ho-grow' href='https://instagram.com/amritcrome' target='_blank'>
+                                                    <span class='fab fa-instagram' />
+                                                </a>
+                                                <a class='icon-holder round P-ho-grow' href='https://reddit.com/u/amritcrome' target='_blank'>
+                                                    <span class='fab fa-reddit' />
+                                                </a>
+                                                <a class='icon-holder round P-ho-grow' href='https://www.youtube.com/channel/UCr2qHRyNMzzek46ZO7QI9fg?sub_confirmation=1' target='_blank'>
+                                                    <span class='fab fa-youtube' />
+                                                    <a class='icon-holder round P-ho-grow' href='https://twitter.com/amritcrome' rel='noopener' target='_blank'>
+                                                        <span class='fab fa-twitter' />
+                                                    </a>
+                                                    <a class='icon-holder round P-ho-grow' href='https://pinterest.com/amritcrome' target='_blank'>
+                                                        <span class='fab fa-pinterest' />
+                                                    </a>
+                                                </a>
+                                                <a class='icon-holder round P-ho-grow' href='https://facebook.com/cromeamrit'>
+                                                    <span class='fab fa-facebook' />
+                                                </a>
+                                                <a class='icon-holder round P-ho-grow' href='https://linkedin.com/in/amritcrome' target='_blank'>
+                                                    <span class='fab fa-linkedin' />
+                                                </a>
+
                                             </div>
-                                        </b:if>
-									
-                                    </b:loop>
-									
-										<b:if cond='data:numPosts == 0'>
-                                          <div class='Pad-24px box-100p noresults'>
-										
+                                            <div class='Pad-t24px P-tac'>
+                                                <a expr:href='data:post.url + &quot;contact&quot;'>Contact me</a>
 
-										  
-										  </div>
-      </b:if>
+                                            </div>
+                                            <div class='hdg Pad-t24px P-tac'>
+                                                <a class='P-fwb' expr:href='data:post.url + &quot;privacy&quot;'>Privacy Policy and Cookies Policy</a>
+                                            </div>
+                                            <div class="Pad-t8px P-tac">
+                                                hosted on
+                                                <a href='https://blogger.com'>Blogger</a>
+                                                , built on
+                                                <a expr:href='data:post.url + &quot;fazer&quot;'>Fazer</a>
+                                                template designed by
+                                                <a href='https://amritcrome.com'>amritcrome</a>
+                                                using
+                                                <a expr:href='data:post.url + &quot;particle&quot;'>Particle.css</a>
+                                            </div>
+                                            <div class='Mgin-b24px P-b0 P-l0 P-pa P-r0 P-tac'>
+                                                <b:include name='nextprev' />
+                                                <div class='chip'>
+                                                    <div class='chip-txt'>
+                                                        <div class='chip-img P-bs2 round'>
+                                                            <a class='chip-icon fab fa-blogger tc-mygrad' href='https://blogger.com' />
+                                                        </div>
+                                                        <div class='chip-author'>
+                                                            <a class='tc-mygrad P-fwb' href='https://blogger.com'>proudly powered by Blogger</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-	  <b:if cond='data:blog.url == data:blog.homepageUrl'>
-	        <section class='fz-footer box-h100vh P-oh P-pr home-post-slider box-100p'>
-		<!-- custom version 1-->
-		<div class='Pad-24px box-100p box-h100vh box-w100vw footer-slider P-pr P-ssac'>
-           
-				
-                    <div class="P-tac Mgin-t56px">
-                       
-                        <a class='icon-holder P-bs2 round P-ho-grow' href='https://instagram.com/amritcrome' target='_blank'>
-                            <span class='fab fa-instagram'/>
-                        </a>
-						<a class='icon-holder round P-ho-grow' href='https://reddit.com/u/amritcrome' target='_blank'>
-                            <span class='fab fa-reddit'/>
-                        </a>
-						<a class='icon-holder round P-ho-grow' href='https://www.youtube.com/channel/UCr2qHRyNMzzek46ZO7QI9fg?sub_confirmation=1' target='_blank'>
-                            <span class='fab fa-youtube'/>
-							<a class='icon-holder round P-ho-grow' href='https://twitter.com/amritcrome' rel='noopener' target='_blank'>
-                            <span class='fab fa-twitter'/>
-                        </a>
-                        <a class='icon-holder round P-ho-grow' href='https://pinterest.com/amritcrome' target='_blank'>
-                            <span class='fab fa-pinterest'/>
-                        </a>
-                        </a>
-						<a class='icon-holder round P-ho-grow' href='https://facebook.com/cromeamrit'>
-                            <span class='fab fa-facebook'/>
-                        </a>
-						<a class='icon-holder round P-ho-grow' href='https://linkedin.com/in/amritcrome' target='_blank'>
-                            <span class='fab fa-linkedin'/>
-                        </a>
-                    
-                </div>
-				<div class='Pad-t24px P-tac'>
-                      <a href="https://amritcrome.com/p/contact-me.html">Contact me</a>
-                    
-                </div>
-				<div class='hdg Pad-t24px P-tac'><a class='P-fwb' href='https://www.amritcrome.com/p/privacy-policy.html'>Privacy Policy and Cookies Policy</a></div>
-				<div class="Pad-t8px"> hosted on 
-                    <a href='https://blogger.com'>Blogger</a>, built on <a href='https://fazer.amritcrome.com'>Fazer</a> template designed by 
-                    <a href='https://amritcrome.com'>amritcrome</a> using 
-                    <a href='https://particle.amritcrome.com'>Particle.css</a></div>
-  <div class='Mgin-b24px P-b0 P-l0 P-pa P-r0 P-tac'>
-  <b:include name='nextprev'/>
-                <div class='chip'>
-                    <div class='chip-txt'>
-                        <div class='chip-img P-bs2 round'>
-                          <a class='chip-icon ai-blogger tc-mygrad' href='https://blogger.com'/>
-                        </div>
-                        <div class='chip-author'>
-                          <a class='tc-mygrad P-fwb' href='https://blogger.com'>proudly powered by Blogger</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            
-		</div>
 
-        </section></b:if>
-	 
-	  <div class="bg-mybg box-100p">
-	  <div class="readermode">
-	  	<b:if cond='data:blog.pageType == &quot;static_page&quot;'>
-                       <div class='Pad-b56px Pad-t56px' id='disqus_thread'><p class='P-fwb'>Sharing Is Caring</p>
-<p>	<!-- sharing link sversion 1-->				
-<a class='icon-holder bg-mygrad round' expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon fab fa-facebook tc-white'/></a> <a class='icon-holder bg-mygrad round' expr:href='&quot;https://twitter.com/share?url=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title + &quot;&amp;via=amritcrome&quot;' rel='noopener' target='_blank'><span class='icon fab fa-twitter tc-white'/></a> <b:if cond='data:blog.isMobile == &quot;true&quot;'><a class='icon-holder bg-mygrad round' expr:href='&quot;whatsapp://send?text=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon fab fa-whatsapp icon tc-white'/></a><b:else/><a class='icon-holder bg-mygrad round' expr:href='&quot;https://web.whatsapp.com/send?text=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon fab fa-whatsapp tc-white'/></a></b:if> <a class='icon-holder bg-mygrad round' expr:href='&quot;httpS://pinterest.com/pin/create/bookmarklet/?url=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon fab fa-pinterest tc-white'/></a> <a class='icon-holder bg-mygrad round' expr:href='&quot;http://tumblr.com/widgets/share/tool?canonicalUrl=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon fab fa-tumblr tc-white'/></a> <a class='icon-holder bg-mygrad round' expr:href='&quot;https://vk.com/share.php?url=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon fab fa-vk tc-white'/></a> <a class='icon-holder bg-mygrad round' expr:href='&quot;http://www.linkedin.com/shareArticle?mini=true&amp;url=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon fab fa-linkedin  tc-white'/></a> <a class='icon-holder bg-mygrad round' expr:href='&quot;https://www.reddit.com/submit?url=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon fab fa-reddit tc-white'/></a>
-</p></div></b:if>
- <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
-	  <div class='Mgin-t24px Pad-b4px P-oh'>
-                                      <b:include name='fzdisqus'/>
-                                </div>
-								</b:if>
-                                   
-									</div>
-									</div>
-                                
-                                <b:else/>
+                                        </div>
+
+                                    </section>
+                                </b:if>
+                                <b:else />
                                 <!--for ad banner for error page-->
                             </b:if>
                             <!-- navigation -->
-                            <b:include name='feedLinks'/>
+                            <b:include name='feedLinks' />
                         </b:includable>
-                    <b:includable id='backlinkDeleteIcon' var='backlink'/>
-                    <b:includable id='backlinks' var='post'/>
-                    <b:includable id='breadcrumb' var='posts'>
-					<!-- breadcrumbs version 1-->
+                        <b:includable id='backlinkDeleteIcon' var='backlink' />
+                        <b:includable id='backlinks' var='post' />
+                        <b:includable id='breadcrumb' var='posts'>
+                            <!-- breadcrumbs version 1-->
                             <b:if cond='data:blog.homepageUrl != data:blog.url and data:blog.pageType == &quot;item&quot;'>
                                 <b:loop values='data:posts' var='post'>
                                     <b:if cond='data:post.labels'>
                                         <div class='brdcrum'>
-                                            <span itemscope='itemscope' itemtype='http://data-vocabulary.org/Breadcrumb'><a class='Pad-l8px Pad-r8px bg-white lbl round' expr:href='data:blog.homepageUrl' itemprop='url' title='Home'><span itemprop='title'>Home</span></a>
+                                            <span itemscope='itemscope' itemtype='http://data-vocabulary.org/Breadcrumb'>
+                                                <a class='Pad-l8px Pad-r8px bg-white lbl round' expr:href='data:blog.homepageUrl' itemprop='url' title='Home'>
+                                                    <span itemprop='title'>Home</span>
+                                                </a>
                                             </span>
                                             <b:loop values='data:post.labels' var='label'>
-                                                <span itemscope='itemscope' itemtype='http://data-vocabulary.org/Breadcrumb'><a class='Pad-l8px Pad-r8px bg-white lbl round' expr:href='data:label.url + &quot;?max-results=15&quot;' expr:title='data:label.name' itemprop='url'><span itemprop='title'><data:label.name/></span></a></span>
+                                                <span itemscope='itemscope' itemtype='http://data-vocabulary.org/Breadcrumb'>
+                                                    <a class='Pad-l8px Pad-r8px bg-white lbl round' expr:href='data:label.url + &quot;?max-results=15&quot;' expr:title='data:label.name' itemprop='url'>
+                                                        <span itemprop='title'>
+                                                            <data:label.name />
+                                                        </span>
+                                                    </a>
+                                                </span>
                                             </b:loop>
                                         </div>
                                     </b:if>
                                 </b:loop>
                             </b:if>
                         </b:includable>
-                    <b:includable id='comment-form' var='post'/>
-                    <b:includable id='commentDeleteIcon' var='comment'/>
-                    <b:includable id='comment_count_picker' var='post'/>
-                    <b:includable id='comment_picker' var='post'/>
-                    <b:includable id='comments' var='post'/>
-                    <b:includable id='feedLinks'/>
-                    <b:includable id='feedLinksBody' var='links'/>
-                    <b:includable id='fzdisqus'>
-                             <!-- disqus version 1 -->
-                                <div class='P-br8px Pad-16px P-oh P-br4px'>
-<iframe class='box-100p P-oh' expr:src='&quot;https://cdn.rawgit.com/blanter/amp/master/amp-disqus.html?shortname=amritcrome&amp;url=&quot; + data:blog.canonicalUrl' frameborder='0' height='465' resizable='resizable' sandbox='allow-scripts allow-same-origin allow-modals allow-popups'>
-<div aria-label='Disqus Comments' overflow='' role='button' tabindex='0'>Disqus Comments</div>
-</iframe>
-                                    <noscript>Please enable JavaScript to view the 
-                                             
-                                        <a href='https://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
-                                    </noscript>
-                                </div>
-                            
+                        <b:includable id='comment-form' var='post' />
+                        <b:includable id='commentDeleteIcon' var='comment' />
+                        <b:includable id='comment_count_picker' var='post' />
+                        <b:includable id='comment_picker' var='post' />
+                        <b:includable id='comments' var='post' />
+                        <b:includable id='feedLinks' />
+                        <b:includable id='feedLinksBody' var='links' />
+                        <b:includable id='fzdisqus'>
+                            <!-- disqus version 1 -->
+                            <div class='P-br8px Pad-16px P-oh P-br4px'>
+                                <iframe class='box-100p P-oh' expr:src='&quot;https://cdn.rawgit.com/blanter/amp/master/amp-disqus.html?shortname=amritcrome&amp;url=&quot; + data:blog.canonicalUrl' frameborder='0' height='465' resizable='resizable' sandbox='allow-scripts allow-same-origin allow-modals allow-popups'>
+                                    <div aria-label='Disqus Comments' overflow='' role='button' tabindex='0'>Disqus Comments</div>
+                                </iframe>
+                                <noscript>
+                                    Please enable JavaScript to view the
+                                    <a href='https://disqus.com/?ref_noscript'>comments powered by Disqus.</a>
+                                </noscript>
+                            </div>
+
                         </b:includable>
-                    <b:includable id='iframe_comments' var='post'/>
-                    <b:includable id='mobile-index-post' var='post'/>
-                    <b:includable id='mobile-main' var='top'/>
-                    <b:includable id='mobile-nextprev'/>
-                    <b:includable id='mobile-post' var='post'/>
-                    <b:includable id='nextprev'>
-                        <div class='pager aflix P-tar round readermode' id='blog-pager'>
-							<!-- pager version 2njs-->
+                        <b:includable id='iframe_comments' var='post' />
+                        <b:includable id='mobile-index-post' var='post' />
+                        <b:includable id='mobile-main' var='top' />
+                        <b:includable id='mobile-nextprev' />
+                        <b:includable id='mobile-post' var='post' />
+                        <b:includable id='nextprev'>
+                            <div class='pager aflix P-tar round readermode' id='blog-pager'>
+                                <!-- pager version 2njs-->
                                 <b:if cond='data:newerPageUrl'>
                                     <a class='next Pad-16px P-dib bg-subbackground round P-bs2 Mgin-8px P-lh1' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'>
-                                        
-                                            <span class='ai-arrowleft'/>
+
+                                        <span class='ai-arrowleft' />
                                     </a>
-                                    <b:else/>
+                                    <b:else />
                                     <b:if cond='data:blog.pageType == &quot;item&quot;'>
-                                    <a class='next Pad-16px P-dib P-lh1 bg-subbackground P-bs2 Mgin-8px round' expr:href='data:blog.homepageUrl' title='Fazer says go to Homepage'>
-                                        <span class='fas fa-arrow-left'/> <span>Go back to Homepage</span>
-                                    </a>
-                                    <b:else/>
-                                    <a class='next disabled P-dib Pad-16px P-lh1 P-bs2 Mgin-8px round' title='Fazer says no link available'>
-                                        <span class='fas fa-arrow-left'/>
-                                    </a>
-                                </b:if>
+                                        <a class='next Pad-16px P-dib P-lh1 bg-subbackground P-bs2 Mgin-8px round' expr:href='data:blog.homepageUrl' title='Fazer says go to Homepage'>
+                                            <span class='fas fa-arrow-left' />
+                                            <span>Go back to Homepage</span>
+                                        </a>
+                                        <b:else />
+                                        <a class='next disabled P-dib Pad-16px P-lh1 P-bs2 Mgin-8px round' title='Fazer says no link available'>
+                                            <span class='fas fa-arrow-left' />
+                                        </a>
+                                    </b:if>
                                 </b:if>
                                 <b:if cond='data:blog.pageType != &quot;item&quot;'>
                                     <a class='home Pad-16px P-dib P-lh1 round P-bs2 Mgin-8px' expr:href='data:blog.homepageUrl'>
-                                        <span class='fas fa-home'/>
+                                        <span class='fas fa-home' />
                                     </a>
-                                    <b:else/>
+                                    <b:else />
                                     <b:if cond='data:olderPageUrl and data:newerPageUrl'>
-                                    <a class='home Pad-16px P-dib P-lh1 round P-bs2 Mgin-8px' expr:href='data:blog.homepageUrl'>
-                                        <span>Home</span>
-                                    </a>
+                                        <a class='home Pad-16px P-dib P-lh1 round P-bs2 Mgin-8px' expr:href='data:blog.homepageUrl'>
+                                            <span>Home</span>
+                                        </a>
                                     </b:if>
                                 </b:if>
                                 <b:if cond='data:olderPageUrl'>
                                     <a class='previous Pad-16px P-dib P-lh1 P-bs2 round Mgin-8px' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'>
-                                        
-                                            <span class='fas fa-arrow-right'/>
-                                        
+
+                                        <span class='fas fa-arrow-right' />
+
                                     </a>
-                                    <b:else/>
+                                    <b:else />
                                     <b:if cond='data:blog.pageType == &quot;item&quot;'>
-                                    <b:if cond='data:newerPageUrl'>
-									<a class='previous P-dib Pad-16px P-lh1 P-bs2 Mgin-8px round' expr:href='data:blog.homepageUrl' title='Fazer says go to Homepage'>
-                                        <span>Go back to Homepage</span> <span class='fas fa-home'/>
-                                    </a></b:if>
-                                    <b:else/>
-									
-                                    <a class='previous disabled P-dib Pad-16px P-lh1 P-bs2 Mgin-8px round' title='Fazer says no link available'>
-                                        <span class='fas fa-arrow-right'/>
-                                    </a>
-									
-                                </b:if>
+                                        <b:if cond='data:newerPageUrl'>
+                                            <a class='previous P-dib Pad-16px P-lh1 P-bs2 Mgin-8px round' expr:href='data:blog.homepageUrl' title='Fazer says go to Homepage'>
+                                                <span>Go back to Homepage</span>
+                                                <span class='fas fa-home' />
+                                            </a>
+                                        </b:if>
+                                        <b:else />
+
+                                        <a class='previous disabled P-dib Pad-16px P-lh1 P-bs2 Mgin-8px round' title='Fazer says no link available'>
+                                            <span class='fas fa-arrow-right' />
+                                        </a>
+
+                                    </b:if>
                                 </b:if>
                             </div>
-							</b:includable>
-                    <b:includable id='post' var='post'>
+                        </b:includable>
+                        <b:includable id='post' var='post'>
                             <b:if cond='data:blog.pageType == &quot;index&quot; or data:blog.pageType == &quot;archive&quot;'>
                                 <b:if cond='data:post.isFirstPost'>
-								<div class="P-df P-sstxm P-oa hero-post-slider">
-                                    <div class='fz-card Pad-24px box-100p box-h100vh box-w100vw home-post-title P-pr P-ssac'>
-									<div class="P-ma fz-cardin P-pr box-h100p">
-                                        
-                                            <b:if cond='data:post.firstImageUrl'>
-                                                <a class="fz-imgax P-br4px P-oh P-db" expr:href='data:post.link ? data:post.link : data:post.url'><img class="P-ofc" expr:alt='data:post.title' expr:src='resizeImage(data:post.firstImageUrl, 600, &quot;3:1&quot;)'/></a>
-                                                <b:else/>
-                                              <a expr:href='data:post.link ? data:post.link : data:post.url'><img alt='Fazer no image available' src='https://4.bp.blogspot.com/-XWCsfaGOeRg/XI1fyG1z9YI/AAAAAAAANIM/Pv24h3BKX-kCSsEapCPVdUEwWzTGayyugCLcBGAs/amritcrome-fazer.png'/></a>
-                                            </b:if> 
-											
-                                          								
-                                      
-                                        <div class='fz-content'>
-										<div class='Pad-t24px'>
-<b:if cond='data:top.showPostLabels and data:post.labels'>
-<b:if cond='data:post.labels'>
-      <b:loop values='data:post.labels' var='label'>
-         <b:if cond='data:label.name == "Animad"'>
-            <div>
+                                    <div class="P-df P-sstxm P-oa hero-post-slider">
+                                        <div class='fz-card Pad-24px box-100p box-h100vh box-w100vw home-post-title P-pr P-ssac'>
+                                            <div class="P-ma fz-cardin P-pr box-h100p">
+
+                                                <b:if cond='data:post.firstImageUrl'>
+                                                    <a class="fz-imgax P-br4px P-oh P-db" expr:href='data:post.link ? data:post.link : data:post.url'>
+                                                        <img class="P-ofc" expr:alt='data:post.title' expr:src='resizeImage(data:post.firstImageUrl, 600, &quot;3:1&quot;)' />
+                                                    </a>
+                                                    <b:else />
+                                                    <a expr:href='data:post.link ? data:post.link : data:post.url'>
+                                                        <img alt='Fazer no image available' src='https://4.bp.blogspot.com/-XWCsfaGOeRg/XI1fyG1z9YI/AAAAAAAANIM/Pv24h3BKX-kCSsEapCPVdUEwWzTGayyugCLcBGAs/amritcrome-fazer.png' />
+                                                    </a>
+                                                </b:if>
+
+
+                                                <div class='fz-content'>
+                                                    <div class='Pad-t24px'>
+                                                        <b:if cond='data:top.showPostLabels and data:post.labels'>
+                                                            <b:if cond='data:post.labels'>
+                                                                <b:loop values='data:post.labels' var='label'>
+                                                                    <b:if cond='data:label.name == "Animad"'>
+                                                                        <div>
 Animad label on homepage
             </div>
-         </b:if>
-      </b:loop>
-   </b:if>
-                                                 
-                                                </b:if>
-                                            </div>
-                                            <b:if cond='data:post.title'>
-                                                <h2 itemprop='name'>
-                                                    <b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'>
-                                                        <a expr:href='data:post.link ? data:post.link : data:post.url'>
-                                                            <data:post.title/>
-                                                        </a>
-                                                        <b:else/>
-                                                        <b:if cond='data:post.title'>
-                                                            <data:post.title/>
-                                                            <b:else/>
-                                                            <h2>Awesome! No title given to me</h2>
+                                                                    </b:if>
+                                                                </b:loop>
+                                                            </b:if>
+
                                                         </b:if>
-                                                    </b:if>
-                                                </h2>
-                                            </b:if>
-                                            <div>
-                                                
-                                            </div>
-                                            <b:if cond='data:post.hasJumpLink'>
-                                                <a class='P-dib Pad-b16px Pad-t24px' expr:href='data:post.url + &quot;#more&quot;' expr:title='data:post.title'>
-                                                    <data:post.jumpText/>  &#187;
-                                                </a>
-                                                <b:else/>
-                                                <a class='P-dib Pad-b16px Pad-t24px' expr:href='data:post.url'>
-                                                    <data:post.jumpText/>  &#187;
-                                                </a>
-                                            </b:if>
-                                        </div>
-                                        <script type='application/ld+json'>{&quot;@context&quot;: &quot;http://schema.org&quot;,&quot;@type&quot;: &quot;BlogPosting&quot;,&quot;mainEntityOfPage&quot;: {&quot;@type&quot;: &quot;WebPage&quot;,&quot;@id&quot;: &quot;<b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'><data:post.title/><b:else/><data:post.title/></b:if>&quot;},&quot;headline&quot;: &quot;<data:post.title/>&quot;,&quot;description&quot;: &quot;<b:if cond='data:post.snippet'><data:post.snippet/><b:else/>here comes the meta description that is necessary for neptarg posts maen not working</b:if>&quot;,&quot;datePublished&quot;: &quot;<data:post.timestampISO8601/>&quot;,&quot;dateModified&quot;: &quot;<data:post.timestampISO8601/>&quot;,&quot;image&quot;: {&quot;@type&quot;: &quot;ImageObject&quot;,&quot;url&quot;: &quot;<b:if cond='data:post.firstImageUrl'><data:post.firstImageUrl/><b:else/>https://4.bp.blogspot.com/-Fz_Q3vd2GsQ/XI1gjSNRDTI/AAAAAAAANIY/uFj68_tFkgshE3HBgOyh_H3-p2BIc0n5wCLcBGAs/amritcrome%2BFazerPreview.jpg</b:if>&quot;,&quot;height&quot;: 630,&quot;width&quot;: 1200},&quot;publisher&quot;: {&quot;@type&quot;: &quot;Organization&quot;,&quot;name&quot;: &quot;Anhancer&quot;,&quot;logo&quot;: {&quot;@type&quot;: &quot;ImageObject&quot;,&quot;url&quot;: &quot;https://lh3.googleusercontent.com/ULB6iBuCeTVvSjjjU1A-O8e9ZpVba6uvyhtiWRti_rBAs9yMYOFBujxriJRZ-A=h60&quot;,&quot;width&quot;: 206,&quot;height&quot;:60}},&quot;author&quot;: {&quot;@type&quot;: &quot;Person&quot;,&quot;name&quot;: &quot;<data:post.author/>&quot;}}
-                                       </script>
-                                    </div></div>
-									<b:if cond='data:post.body'>
-                                                    <data:post.body/>
-                                                </b:if>
-									</div>
-                                    <b:else/>
-                                    <!--this is post starting-->
-									<div class="P-df P-sstxm P-oa home-page-slider">
-                                    <div  class='fz-card Pad-24px box-100p box-h100vh box-w100vw post-page-title P-pr P-ssac'>
-									<div class="fz-img P-pa P-t0 P-r0 P-b0 P-l0 box-100p box-100vh"><img class="fz-imgmask box-h100p box-100p P-ofc" expr:src='data:post.firstImageUrl'/></div>
-									<div class="fz-title bg-screenblack Pad-24px P-t0 P-b0 P-l0 P-r0 P-pa">
-									<div class='Mgin-t56px'>
-                                            <!-- labels-->
-                                            <b:if cond='data:top.showPostLabels and data:post.labels'>
-                                                <div class=''>
-                                                    <b:loop values='data:post.labels' var='label'>
-                                                        <a expr:href='data:label.url' rel='tag'>
-                                                            <data:label.name/>
-                                                        </a>
-                                                        <b:if cond='data:label.isLast != &quot;true&quot;'>
-                                                            <span class='divider'>/</span>
-                                                        </b:if>
-                                                    </b:loop>
-                                                </div>
-                                            </b:if>
-                                            <h1 class='Mgin-t24px box-60p-lap box-70p-tab f48px' itemprop='name'>
-                                                <b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'>
-                                                    <a expr:href='data:post.link ? data:post.link : data:post.url'>
-                                                        <b:if cond='data:post.title'>
-                                                            <data:post.title/>
-                                                            <b:else/>
-        Awesome! No title given to me
-         
-                                                         
-                                                        </b:if>
-                                                    </a>
-                                                    <b:else/>
+                                                    </div>
                                                     <b:if cond='data:post.title'>
-                                                        <data:post.title/>
-                                                        <b:else/>
-        Awesome! No title given to me
-         
-                                                     
+                                                        <h2 itemprop='name'>
+                                                            <b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'>
+                                                                <a expr:href='data:post.link ? data:post.link : data:post.url'>
+                                                                    <data:post.title />
+                                                                </a>
+                                                                <b:else />
+                                                                <b:if cond='data:post.title'>
+                                                                    <data:post.title />
+                                                                    <b:else />
+                                                                    <h2>Awesome! No title given to me</h2>
+                                                                </b:if>
+                                                            </b:if>
+                                                        </h2>
                                                     </b:if>
-                                                </b:if>
-                                            </h1>
-                                           
-                                            <b:if cond='data:post.hasJumpLink'>
-                                                <a class='P-dib Pad-b16px Pad-t24px' expr:href='data:post.url + &quot;#more&quot;' expr:title='data:post.title'>
-                                                    <data:post.jumpText/>  &#187;
-                                                </a>
-                                                <b:else/>
-                                                <a class='P-dib Pad-b16px Pad-t24px' expr:href='data:post.url'>
-                                                    <data:post.jumpText/>  &#187;
-                                                </a>
-                                            </b:if>
-                                                
-                                          
-                                            
-<script type='application/ld+json'>{&quot;@context&quot;: &quot;http://schema.org&quot;,&quot;@type&quot;: &quot;BlogPosting&quot;,&quot;mainEntityOfPage&quot;: {&quot;@type&quot;: &quot;WebPage&quot;,&quot;@id&quot;: &quot;<b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'>
-                                                    <data:post.title/>
-                                                    <b:else/>
-                                                    <data:post.title/>
-                                                </b:if>&quot;},&quot;headline&quot;: &quot;
-                                                 
-                                                <data:post.title/>&quot;,&quot;description&quot;: &quot;
-                                                 
-                                                <b:if cond='data:post.snippet'>
-                                                    <data:post.snippet/>
-                                                    <b:else/>here comes the meta description that is necessary for neptarg posts maen not working
-                                                 
-                                                </b:if>&quot;,&quot;datePublished&quot;: &quot;
-                                                 
-                                                <data:post.timestampISO8601/>&quot;,&quot;dateModified&quot;: &quot;
-                                                 
-                                                <data:post.timestampISO8601/>&quot;,&quot;image&quot;: {&quot;@type&quot;: &quot;ImageObject&quot;,&quot;url&quot;: &quot;
-                                                 
-                                                <b:if cond='data:post.firstImageUrl'>
-                                                    <data:post.firstImageUrl/>
-                                                    <b:else/>https://4.bp.blogspot.com/-Fz_Q3vd2GsQ/XI1gjSNRDTI/AAAAAAAANIY/uFj68_tFkgshE3HBgOyh_H3-p2BIc0n5wCLcBGAs/amritcrome%2BFazerPreview.jpg
-                                                 
-                                                </b:if>&quot;,&quot;height&quot;: 630,&quot;width&quot;: 1200},&quot;publisher&quot;: {&quot;@type&quot;: &quot;Organization&quot;,&quot;name&quot;: &quot;Anhancer&quot;,&quot;logo&quot;: {&quot;@type&quot;: &quot;ImageObject&quot;,&quot;url&quot;: &quot;https://lh3.googleusercontent.com/ULB6iBuCeTVvSjjjU1A-O8e9ZpVba6uvyhtiWRti_rBAs9yMYOFBujxriJRZ-A=h60&quot;,&quot;width&quot;: 206,&quot;height&quot;: 60}},&quot;author&quot;: {&quot;@type&quot;: &quot;Person&quot;,&quot;name&quot;: &quot;
-                                                 
-                                                <data:post.author/>&quot;}}
-                                             
-                                            </script>
+                                                    <div></div>
+                                                    <b:if cond='data:post.hasJumpLink'>
+                                                        <a class='P-dib Pad-b16px Pad-t24px' expr:href='data:post.url + &quot;#more&quot;' expr:title='data:post.title'>
+                                                            <data:post.jumpText />
+                                                            &#187;
+                                                        </a>
+                                                        <b:else />
+                                                        <a class='P-dib Pad-b16px Pad-t24px' expr:href='data:post.url'>
+                                                            <data:post.jumpText />
+                                                            &#187;
+                                                        </a>
+                                                    </b:if>
+                                                </div>
+                                                <script type='application/ld+json'>
+                                                    {&quot;@context&quot;: &quot;http://schema.org&quot;,&quot;@type&quot;: &quot;BlogPosting&quot;,&quot;mainEntityOfPage&quot;: {&quot;@type&quot;: &quot;WebPage&quot;,&quot;@id&quot;: &quot;
+                                                    <b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'>
+                                                        <data:post.title />
+                                                        <b:else />
+                                                        <data:post.title />
+                                                    </b:if>
+                                                    &quot;},&quot;headline&quot;: &quot;
+                                                    <data:post.title />
+                                                    &quot;,&quot;description&quot;: &quot;
+                                                    <b:if cond='data:post.snippet'>
+                                                        <data:post.snippet />
+                                                        <b:else />
+                                                        here comes the meta description that is necessary for neptarg posts maen not working
+                                                    </b:if>
+                                                    &quot;,&quot;datePublished&quot;: &quot;
+                                                    <data:post.timestampISO8601 />
+                                                    &quot;,&quot;dateModified&quot;: &quot;
+                                                    <data:post.timestampISO8601 />
+                                                    &quot;,&quot;image&quot;: {&quot;@type&quot;: &quot;ImageObject&quot;,&quot;url&quot;: &quot;
+                                                    <b:if cond='data:post.firstImageUrl'>
+                                                        <data:post.firstImageUrl />
+                                                        <b:else />
+                                                        https://4.bp.blogspot.com/-Fz_Q3vd2GsQ/XI1gjSNRDTI/AAAAAAAANIY/uFj68_tFkgshE3HBgOyh_H3-p2BIc0n5wCLcBGAs/amritcrome%2BFazerPreview.jpg
+                                                    </b:if>
+                                                    &quot;,&quot;height&quot;: 630,&quot;width&quot;: 1200},&quot;publisher&quot;: {&quot;@type&quot;: &quot;Organization&quot;,&quot;name&quot;: &quot;Anhancer&quot;,&quot;logo&quot;: {&quot;@type&quot;: &quot;ImageObject&quot;,&quot;url&quot;: &quot;https://lh3.googleusercontent.com/ULB6iBuCeTVvSjjjU1A-O8e9ZpVba6uvyhtiWRti_rBAs9yMYOFBujxriJRZ-A=h60&quot;,&quot;width&quot;: 206,&quot;height&quot;:60}},&quot;author&quot;: {&quot;@type&quot;: &quot;Person&quot;,&quot;name&quot;: &quot;
+                                                    <data:post.author />
+                                                    &quot;}}
+                                                </script>
+                                            </div>
                                         </div>
-										<div class="P-pa P-r0 P-b0 Mgin-24px Mgin-b24px P-zi1"><!-- sharing links version 3-->
-<div class='drop bg-mygrad round tc-black'><span class='Pad-16px fas fa-share-alt cal-ho-splash P-ho-border round'/><div class='down P-br4px P-bs2 P-b0 P-r0 Mgin-r24px Mgin-b24px P-zi1 cor-menu bg-subbackground'><ul><li><a expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url' rel='noopener' target='_blank'><span class='fab fa-facebook icon'/> Facebook</a></li><li><a expr:href='&quot;https://twitter.com/share?url=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title + &quot;&amp;via=amritcrome&quot;' rel='noopener' target='_blank'><span class='icon fab fa-twitter'/> Twitter</a></li><li><b:if cond='data:blog.isMobile == &quot;true&quot;'><a expr:href='&quot;whatsapp://send?text=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon fab fa-whatsapp'/> Whatsapp</a><b:else/><a expr:href='&quot;https://web.whatsapp.com/send?text=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon fab fa-whatsapp'/> Whatsapp</a></b:if></li><li><a expr:href='&quot;https://pinterest.com/pin/create/bookmarklet/?media=&quot; + data:blog.postImageUrl + &quot;&amp;url&quot; + data:post.url + &quot;&amp;is_video=false&amp;description=&quot; + data:blog.metaDescription' rel='noopener' target='_blank'><span class='icon fab fa-pinterest'/> Pinterest</a></li><li class='icongroup'><a expr:href='&quot;http://tumblr.com/widgets/share/tool?canonicalUrl=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon fab fa-tumblr'/></a><a expr:href='&quot;https://vk.com/share.php?url=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon fab fa-vk'/></a><a expr:href='&quot;http://www.linkedin.com/shareArticle?mini=true&amp;url=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon fab fa-linkedin'/></a><a expr:href='&quot;https://www.reddit.com/submit?url=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon fab fa-reddit'/></a></li></ul></div></div></div>
-                                    </div></div>
-									<b:if cond='data:post.body'>
-                                                    <data:post.body/>
-                                                </b:if>
-									</div>
+                                        <b:if cond='data:post.body'>
+                                            <data:post.body />
+                                        </b:if>
+                                    </div>
+                                    <b:else />
+                                    <!--this is post starting-->
+                                    <div class="P-df P-sstxm P-oa home-page-slider">
+                                        <div class='fz-card Pad-24px box-100p box-h100vh box-w100vw post-page-title P-pr P-ssac'>
+                                            <div class="fz-img P-pa P-t0 P-r0 P-b0 P-l0 box-100p box-100vh">
+                                                <img class="fz-imgmask box-h100p box-100p P-ofc" expr:src='data:post.firstImageUrl' />
+                                            </div>
+                                            <div class="fz-title bg-screenblack Pad-24px P-t0 P-b0 P-l0 P-r0 P-pa">
+                                                <div class='Mgin-t56px'>
+                                                    <!-- labels-->
+                                                    <b:if cond='data:top.showPostLabels and data:post.labels'>
+                                                        <div class=''>
+                                                            <b:loop values='data:post.labels' var='label'>
+                                                                <a expr:href='data:label.url' rel='tag'>
+                                                                    <data:label.name />
+                                                                </a>
+                                                                <b:if cond='data:label.isLast != &quot;true&quot;'>
+                                                                    <span class='divider'>/</span>
+                                                                </b:if>
+                                                            </b:loop>
+                                                        </div>
+                                                    </b:if>
+                                                    <h1 class='Mgin-t24px box-60p-lap box-70p-tab f48px' itemprop='name'>
+                                                        <b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'>
+                                                            <a expr:href='data:post.link ? data:post.link : data:post.url'>
+                                                                <b:if cond='data:post.title'>
+                                                                    <data:post.title />
+                                                                    <b:else />
+                                                                    Awesome! No title given to me
+                                                                </b:if>
+                                                            </a>
+                                                            <b:else />
+                                                            <b:if cond='data:post.title'>
+                                                                <data:post.title />
+                                                                <b:else />
+                                                                Awesome! No title given to me
+                                                            </b:if>
+                                                        </b:if>
+                                                    </h1>
+
+                                                    <b:if cond='data:post.hasJumpLink'>
+                                                        <a class='P-dib Pad-b16px Pad-t24px' expr:href='data:post.url + &quot;#more&quot;' expr:title='data:post.title'>
+                                                            <data:post.jumpText />
+                                                            &#187;
+                                                        </a>
+                                                        <b:else />
+                                                        <a class='P-dib Pad-b16px Pad-t24px' expr:href='data:post.url'>
+                                                            <data:post.jumpText />
+                                                            &#187;
+                                                        </a>
+                                                    </b:if>
+
+
+                                                    <script type='application/ld+json'>
+                                                        {&quot;@context&quot;: &quot;http://schema.org&quot;,&quot;@type&quot;: &quot;BlogPosting&quot;,&quot;mainEntityOfPage&quot;: {&quot;@type&quot;: &quot;WebPage&quot;,&quot;@id&quot;: &quot;
+                                                        <b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'>
+                                                            <data:post.title />
+                                                            <b:else />
+                                                            <data:post.title />
+                                                        </b:if>
+                                                        &quot;},&quot;headline&quot;: &quot;
+                                                        <data:post.title />
+                                                        &quot;,&quot;description&quot;: &quot;
+                                                        <b:if cond='data:post.snippet'>
+                                                            <data:post.snippet />
+                                                            <b:else />
+                                                            here comes the meta description that is necessary for neptarg posts maen not working
+                                                        </b:if>
+                                                        &quot;,&quot;datePublished&quot;: &quot;
+                                                        <data:post.timestampISO8601 />
+                                                        &quot;,&quot;dateModified&quot;: &quot;
+                                                        <data:post.timestampISO8601 />
+                                                        &quot;,&quot;image&quot;: {&quot;@type&quot;: &quot;ImageObject&quot;,&quot;url&quot;: &quot;
+                                                        <b:if cond='data:post.firstImageUrl'>
+                                                            <data:post.firstImageUrl />
+                                                            <b:else />
+                                                            https://4.bp.blogspot.com/-Fz_Q3vd2GsQ/XI1gjSNRDTI/AAAAAAAANIY/uFj68_tFkgshE3HBgOyh_H3-p2BIc0n5wCLcBGAs/amritcrome%2BFazerPreview.jpg
+                                                        </b:if>
+                                                        &quot;,&quot;height&quot;: 630,&quot;width&quot;: 1200},&quot;publisher&quot;: {&quot;@type&quot;: &quot;Organization&quot;,&quot;name&quot;: &quot;Anhancer&quot;,&quot;logo&quot;: {&quot;@type&quot;: &quot;ImageObject&quot;,&quot;url&quot;: &quot;https://lh3.googleusercontent.com/ULB6iBuCeTVvSjjjU1A-O8e9ZpVba6uvyhtiWRti_rBAs9yMYOFBujxriJRZ-A=h60&quot;,&quot;width&quot;: 206,&quot;height&quot;: 60}},&quot;author&quot;: {&quot;@type&quot;: &quot;Person&quot;,&quot;name&quot;: &quot;
+                                                        <data:post.author />
+                                                        &quot;}}
+                                                    </script>
+                                                </div>
+                                                <div class="P-pa P-r0 P-b0 Mgin-24px Mgin-b24px P-zi1">
+                                                    <!-- sharing links version 3-->
+                                                    <div class='drop bg-mygrad round tc-black'>
+                                                        <span class='Pad-16px fas fa-share-alt cal-ho-splash P-ho-border round' />
+                                                        <div class='down P-br4px P-bs2 P-b0 P-r0 Mgin-r24px Mgin-b24px P-zi1 cor-menu bg-subbackground'>
+                                                            <ul>
+                                                                <li>
+                                                                    <a expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url' rel='noopener' target='_blank'>
+                                                                        <span class='fab fa-facebook icon' />
+                                                                        Facebook
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a expr:href='&quot;https://twitter.com/share?url=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title + &quot;&amp;via=amritcrome&quot;' rel='noopener' target='_blank'>
+                                                                        <span class='icon fab fa-twitter' />
+                                                                        Twitter
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <b:if cond='data:blog.isMobile == &quot;true&quot;'>
+                                                                        <a expr:href='&quot;whatsapp://send?text=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title' rel='noopener' target='_blank'>
+                                                                            <span class='icon fab fa-whatsapp' />
+                                                                            Whatsapp
+                                                                        </a>
+                                                                        <b:else />
+                                                                        <a expr:href='&quot;https://web.whatsapp.com/send?text=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title' rel='noopener' target='_blank'>
+                                                                            <span class='icon fab fa-whatsapp' />
+                                                                            Whatsapp
+                                                                        </a>
+                                                                    </b:if>
+                                                                </li>
+                                                                <li>
+                                                                    <a expr:href='&quot;https://pinterest.com/pin/create/bookmarklet/?media=&quot; + data:blog.postImageUrl + &quot;&amp;url&quot; + data:post.url + &quot;&amp;is_video=false&amp;description=&quot; + data:blog.metaDescription' rel='noopener' target='_blank'>
+                                                                        <span class='icon fab fa-pinterest' />
+                                                                        Pinterest
+                                                                    </a>
+                                                                </li>
+                                                                <li class='icongroup'>
+                                                                    <a expr:href='&quot;http://tumblr.com/widgets/share/tool?canonicalUrl=&quot; + data:post.url' rel='noopener' target='_blank'>
+                                                                        <span class='icon fab fa-tumblr' />
+                                                                    </a>
+                                                                    <a expr:href='&quot;https://vk.com/share.php?url=&quot; + data:post.url' rel='noopener' target='_blank'>
+                                                                        <span class='icon fab fa-vk' />
+                                                                    </a>
+                                                                    <a expr:href='&quot;http://www.linkedin.com/shareArticle?mini=true&amp;url=&quot; + data:post.url' rel='noopener' target='_blank'>
+                                                                        <span class='icon fab fa-linkedin' />
+                                                                    </a>
+                                                                    <a expr:href='&quot;https://www.reddit.com/submit?url=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='noopener' target='_blank'>
+                                                                        <span class='icon fab fa-reddit' />
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <b:if cond='data:post.body'>
+                                            <data:post.body />
+                                        </b:if>
+                                    </div>
                                 </b:if>
-                                <b:else/>
-                               
-                                <div class='P-df P-sstxm P-oa post-page-slider'>
-                                    <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
-                                   <div class="fz-card P-pr box-100p Pad-24px P-ssac P-pr box-w100vw box-h100vh">
-  <div class="Pad-t24px Mgin-t56px">
-   <b:if cond='data:post.title'>
-  
-                                        <h1 class='tc-white' itemprop='name'>
-                                            <b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'>
-                                                <a class='tc-white' expr:href='data:post.link ? data:post.link : data:post.url'>
-                                                    <data:post.title/>
-                                                </a>
-                                                <b:else/>
-                                                <data:post.title/>
-                                            </b:if>
-                                        </h1>
+                                <b:else />
 
-</b:if>
+                              <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+                                <div class='P-df P-sstxm P-oh staticpage-page-slider'>
+                                        <div class="fz-card P-oa P-ssac box-100p box-h100vh box-w100vw P-pr Pad-24px">
+                                            <div class="readermode P-bs1">
+                                                <b:if cond='data:post.title'>
+
+                                                    <h1 class='tc-white' itemprop='name'>
+                                                        <b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'>
+                                                            <a class='tc-white' expr:href='data:post.link ? data:post.link : data:post.url'>
+                                                                <data:post.title />
+                                                            </a>
+                                                            <b:else />
+                                                            <data:post.title />
+                                                        </b:if>
+                                                    </h1>
+
+                                                </b:if>
+                                                <data:post.body />
+                                            </div>
+                                            
+                                        </div>
 </div>
-<data:post.body/>
-                                </div>
-										
 
-                                        <b:else/>
+                                        <b:else />
+                                        <div class='P-df P-sstxm P-oa post-page-slider'>
                                         <div class="fz-card P-pr box-100p Pad-24px P-ssac P-pr box-w100vw box-h100vh">
                                             <div class="Pad-t24px Mgin-t56px">
-                                             <b:if cond='data:post.title'>
-                                            
-                                                                                  <h1 class='tc-white' itemprop='name'>
-                                                                                      <b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'>
-                                                                                          <a class='tc-white' expr:href='data:post.link ? data:post.link : data:post.url'>
-                                                                                              <data:post.title/>
-                                                                                          </a>
-                                                                                          <b:else/>
-                                                                                          <data:post.title/>
-                                                                                      </b:if>
-                                                                                  </h1>
-                                                                                  <div class='box-100p Pad-t24px'>
-                                                                              <b:include data='posts' name='breadcrumb'/>
-                                                                          </div>
-                                                                          <b:if cond='data:blog.metaDescription'><p class='sub-hdg Pad-t24px'>
-                                                  <data:blog.metaDescription/></p>
-                                              </b:if>
-                                                                                                                            
-                                          
-                                          
-                                          </b:if>
-                                            
-                                            <div class="P-pa P-b0 P-r0 Mgin-24px"><div class='drop P-dib P-fr'><span class='icon-holder tc-white fas fa-share cal-ho-splash P-ho-border round'/><div class='down P-br4px P-bs2 P-b0 P-r0 Mgin-r24px Mgin-b24px P-zi1 cor-menu bg-subbackground'><ul><li><a expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url' rel='noopener' target='_blank'><span class='fab fa-facebook icon'/> Facebook</a></li><li><a expr:href='&quot;https://twitter.com/share?url=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title + &quot;&amp;via=amritcrome&quot;' rel='noopener' target='_blank'><span class='icon fab fa-twitter'/> Twitter</a></li><li><b:if cond='data:blog.isMobile == &quot;true&quot;'><a expr:href='&quot;whatsapp://send?text=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon fab fa-whatsapp'/> Whatsapp</a><b:else/><a expr:href='&quot;https://web.whatsapp.com/send?text=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon fab fa-whatsapp'/> Whatsapp</a></b:if></li><li><a expr:href='&quot;https://pinterest.com/pin/create/bookmarklet/?media=&quot; + data:blog.postImageUrl + &quot;&amp;url&quot; + data:post.url + &quot;&amp;is_video=false&amp;description=&quot; + data:blog.metaDescription' rel='noopener' target='_blank'><span class='icon fab fa-pinterest'/> Pinterest</a></li><li class='icongroup'><a expr:href='&quot;http://tumblr.com/widgets/share/tool?canonicalUrl=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon fab fa-tumblr'/></a><a expr:href='&quot;https://vk.com/share.php?url=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon fab fa-vk'/></a><a expr:href='&quot;http://www.linkedin.com/shareArticle?mini=true&amp;url=&quot; + data:post.url' rel='noopener' target='_blank'><span class='icon fab fa-linkedin'/></a><a expr:href='&quot;https://www.reddit.com/submit?url=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='noopener' target='_blank'><span class='icon fab fa-reddit'/></a></li></ul></div></div></div>
-                                          </div>
-                                                                          </div>
-                                                                                  <data:post.body/>
-                                          
-                               </b:if>
-								</div>
+                                                <b:if cond='data:post.title'>
+
+                                                    <h1 class='tc-white' itemprop='name'>
+                                                        <b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'>
+                                                            <a class='tc-white' expr:href='data:post.link ? data:post.link : data:post.url'>
+                                                                <data:post.title />
+                                                            </a>
+                                                            <b:else />
+                                                            <data:post.title />
+                                                        </b:if>
+                                                    </h1>
+                                                    <div class='box-100p Pad-t24px'>
+                                                        <b:include data='posts' name='breadcrumb' />
+                                                    </div>
+                                                    <b:if cond='data:blog.metaDescription'>
+                                                        <p class='sub-hdg Pad-t24px'>
+                                                            <data:blog.metaDescription />
+                                                        </p>
+                                                    </b:if>
+
+
+                                                </b:if>
+
+                                                <div class="P-pa P-b0 P-r0 Mgin-24px">
+                                                    <div class='drop P-dib P-fr'>
+                                                        <span class='icon-holder tc-white fas fa-share cal-ho-splash P-ho-border round' />
+                                                        <div class='down P-br4px P-bs2 P-b0 P-r0 Mgin-r24px Mgin-b24px P-zi1 cor-menu bg-subbackground'>
+                                                            <ul>
+                                                                <li>
+                                                                    <a expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:post.url' rel='noopener' target='_blank'>
+                                                                        <span class='fab fa-facebook icon' />
+                                                                        Facebook
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a expr:href='&quot;https://twitter.com/share?url=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title + &quot;&amp;via=amritcrome&quot;' rel='noopener' target='_blank'>
+                                                                        <span class='icon fab fa-twitter' />
+                                                                        Twitter
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <b:if cond='data:blog.isMobile == &quot;true&quot;'>
+                                                                        <a expr:href='&quot;whatsapp://send?text=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title' rel='noopener' target='_blank'>
+                                                                            <span class='icon fab fa-whatsapp' />
+                                                                            Whatsapp
+                                                                        </a>
+                                                                        <b:else />
+                                                                        <a expr:href='&quot;https://web.whatsapp.com/send?text=&quot; + data:post.url + &quot;&amp;text=&quot; + data:post.title' rel='noopener' target='_blank'>
+                                                                            <span class='icon fab fa-whatsapp' />
+                                                                            Whatsapp
+                                                                        </a>
+                                                                    </b:if>
+                                                                </li>
+                                                                <li>
+                                                                    <a expr:href='&quot;https://pinterest.com/pin/create/bookmarklet/?media=&quot; + data:blog.postImageUrl + &quot;&amp;url&quot; + data:post.url + &quot;&amp;is_video=false&amp;description=&quot; + data:blog.metaDescription' rel='noopener' target='_blank'>
+                                                                        <span class='icon fab fa-pinterest' />
+                                                                        Pinterest
+                                                                    </a>
+                                                                </li>
+                                                                <li class='icongroup'>
+                                                                    <a expr:href='&quot;http://tumblr.com/widgets/share/tool?canonicalUrl=&quot; + data:post.url' rel='noopener' target='_blank'>
+                                                                        <span class='icon fab fa-tumblr' />
+                                                                    </a>
+                                                                    <a expr:href='&quot;https://vk.com/share.php?url=&quot; + data:post.url' rel='noopener' target='_blank'>
+                                                                        <span class='icon fab fa-vk' />
+                                                                    </a>
+                                                                    <a expr:href='&quot;http://www.linkedin.com/shareArticle?mini=true&amp;url=&quot; + data:post.url' rel='noopener' target='_blank'>
+                                                                        <span class='icon fab fa-linkedin' />
+                                                                    </a>
+                                                                    <a expr:href='&quot;https://www.reddit.com/submit?url=&quot; + data:post.url + &quot;&amp;title=&quot; + data:post.title' rel='noopener' target='_blank'>
+                                                                        <span class='icon fab fa-reddit' />
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <data:post.body />
+                                    </div>
+                                    </b:if>
+                                
                             </b:if>
                         </b:includable>
-                    <b:includable id='postQuickEdit' var='post'/>
-                    <b:includable id='shareButtons' var='post'/>
-                    <b:includable id='status-message'>
+                        <b:includable id='postQuickEdit' var='post' />
+                        <b:includable id='shareButtons' var='post' />
+                        <b:includable id='status-message'>
                             <b:if cond='data:navMessage'>
                                 <div class='P-tac round readermode'>
                                     <div class='fz-status-msg'>
-                                        <data:navMessage/>
+                                        <data:navMessage />
                                     </div>
                                 </div>
                             </b:if>
                         </b:includable>
-                    <b:includable id='threaded-comment-form' var='post'/>
-                    <b:includable id='threaded_comment_js' var='post'/>
-                    <b:includable id='threaded_comments' var='post'/>
-                  </b:widget>
+                        <b:includable id='threaded-comment-form' var='post' />
+                        <b:includable id='threaded_comment_js' var='post' />
+                        <b:includable id='threaded_comments' var='post' />
+                    </b:widget>
                 </b:section>
-                    
-                    
+
+
             </div>
         </div>
-
- 
-&lt;!--
-     
+        &lt;!--
     </body>
---&gt; &lt;/body&gt;
- 
- 
+    --&gt; &lt;/body&gt;
 </html>
