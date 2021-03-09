@@ -150,6 +150,7 @@
 
     <link href='https://amritcrome.github.io/Particle/Assets/Particle-v1/particle-v1.css' rel='stylesheet' type='text/css' />
     <link href='https://fonts.googleapis.com/css2?family=Work+Sans&amp;display=swap' rel='stylesheet' />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" type="text/css"/>
     <style>
 	
 :root {
@@ -203,6 +204,8 @@ html{scroll-behaviour:smooth;overflow-wrap:break-word;word-break:break-word;word
 .fz-card .fz-content a{color:#fff}
 .f48px{font-size:38px;font-weight:300!important}
 
+.animad{    background: #300411;
+    color: #ca5b61;}
 @media (min-width: 576px){.fz-cardin{width:650px}}
 @media (min-width: 768px){.fz-cardin{width:100%;display:flex}
 .fz-imgax{width:30%;
@@ -214,7 +217,6 @@ html{scroll-behaviour:smooth;overflow-wrap:break-word;word-break:break-word;word
 @media (min-width: 1200px){lap}
 
     </style>
-    <script src="https://kit.fontawesome.com/30d80d0e10.js" crossorigin="anonymous"></script>
     &lt;/head&gt;&lt;!--
     <head />
     --&gt;
@@ -223,68 +225,11 @@ html{scroll-behaviour:smooth;overflow-wrap:break-word;word-break:break-word;word
         <div class='P-section'>
             <div class='flexbox P-ma'>
                 <!--fazer -->
-                <b:section class="P-dn" id='leftone' name='left' showaddelement='yes'>
-                    <b:widget id='PageList2' locked='true' mobile='yes' title='Pages' type='PageList' version='1'>
-                        <b:widget-settings>
-                            <b:widget-setting name='pageListJson'>
-                                <![CDATA[{'3812960179960391523': {'href': 'https://particle.amritcrome.com/p/how-to-create-and-use-particle-class.html', 'title': 'How to create and use a Particle Class.', 'position': 0}, '8984768463021713060': {'href': 'https://particle.amritcrome.com/p/particle-p-classes.html', 'title': 'Particle  P-Classes', 'position': 1}, '1395815746492519104': {'href': 'https://particle.amritcrome.com/p/particle.html', 'title': 'Value based classes', 'position': 2}, '4189253833579585061': {'href': 'https://particle.amritcrome.com/p/particle-buttons.html', 'title': 'Particle Buttons', 'position': 3}, '6061453477919636137': {'href': 'https://particle.amritcrome.com/p/particle-effects.html', 'title': 'Particle Effects', 'position': 4}, '2425680432135375213': {'href': 'https://particle.amritcrome.com/p/particle-chips.html', 'title': 'Particle Chips', 'position': 5}, '3415900426798633458': {'href': 'https://particle.amritcrome.com/p/particle-cards.html', 'title': 'Particle Cards', 'position': 6}}]]>
-                            </b:widget-setting>
-                            <b:widget-setting name='homeTitle'>Home</b:widget-setting>
-                        </b:widget-settings>
-                        <b:includable id='main'>
-                            <!-- <b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>-->
-                            <div class='chip box-100p Pad-8px'>
-                                <div class='chip-txt-func'>
-                                    <div class='chip-img bg-mygrad tc-white round'>
-                                        <i class='chip-icon ai-amritcrome' />
-                                    </div>
-                                    <div class='chip-author P-tac'>
-                                        <a expr:href='data:blog.homepageUrl'>
-                                            <data:blog.title />
-                                        </a>
-                                    </div>
-                                    <div class='chip-img-func'>
-                                        <div class='P-search'>
-                                            <span class='P-search-icon ai-search-o' />
-                                            <form action='/search' expr:class='data:view.isSearch ? &quot;P-expand round P-bs2 active&quot; : &quot;P-expand round P-bs2&quot;' target='_top'>
-                                                <input autocomplete='off' autofocus='autofocus' expr:value='data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;' name='q' placeholder='What are you looking for?' size='10' title='search' type='text' />
-                                                <button class='P-search-icon ai-search-o' type='submit' />
-                                            </form>
-                                        </div>
+                <b:section id='leftone' name='left' showaddelement='yes'>
 
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="navbar Mgin-t24px">
-                                <div class="hamburger box-100p">
-                                    <span class="icon-holder ai-bars-o"></span>
-                                    <span class="P-fwb">Menu</span>
-                                    <div class="menu">
-                                        <div class="cor-menu-mod box-100p P-wsnw P-tal">
-
-                                            <ul>
-                                                <b:loop values='data:links' var='link'>
-                                                    <li>
-                                                        <b:class cond='data:link.isCurrentPage' name='active' />
-                                                        <a expr:href='data:link.href'>
-                                                            <data:link.title />
-                                                        </a>
-                                                    </li>
-                                                </b:loop>
-                                            </ul>
-
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </b:includable>
-                    </b:widget>
                 </b:section>
                 <div class="P-pf P-l0 P-r0 P-t0 Mgin-t8px P-zi1 P-tac">
-                    <a class="P-bs2 icon-holder Pad-8px bg-mirror round tc-black tc-white" expr:href='data:post.url'>
+                    <a class="P-bs2 icon-holder Pad-8px bg-mirror round tc-black tc-white" expr:href='data:blog.homepageUrl'>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.18 45.71" class="">
                             <title>amritcrome</title>
                             <g id="Layer_2" data-name="Layer 2">
@@ -329,7 +274,7 @@ html{scroll-behaviour:smooth;overflow-wrap:break-word;word-break:break-word;word
                                 <section class='fz-home box-h100vh Pad-24px P-oh P-pr box-100p'>
                                     <div class="Mgin-t56px Pad-t24px">
                                         homepage
-                                        <a expr:href='data:post.url + &quot;animad&quot;'>Animad</a>
+                                        <a expr:href='data:blog.homepageUrl + &quot;animad&quot;'>Animad</a>
 
                                     </div>
                                 </section>
@@ -382,48 +327,29 @@ html{scroll-behaviour:smooth;overflow-wrap:break-word;word-break:break-word;word
                                         <!-- custom version 1-->
                                         <div class='Pad-24px box-100p box-h100vh box-w100vw footer-slider P-pr P-ssac'>
 
+                                            <div class="P-df Mgin-t56px P-ma P-df-fww">
+<ul class="P-lsn box-50p box-3-ipad box-4p-lap cor-menu">
+    <li><a><span class="icon">🤝</span> Follow us</a></li>
+    <li><a href='https://instagram.com/amritcrome' target="_blank">Instagram</a></li>
+    <li><a href='https://facebook.com/cromeamrit' target="_blank">Facebook</a></li>
+    <li><a href='https://www.youtube.com/channel/UCr2qHRyNMzzek46ZO7QI9fg?sub_confirmation=1' target="_blank">Youtube</a></li>
+    <li><a href='https://twitter.com/amritcrome' target="_blank">Twitter</a></li>
+    <li><a href='https://pinterest.com/amritcrome' target="_blank">Pinterest</a></li>
+    <li><a href='https://reddit.com/u/amritcrome' target="_blank">Reddit</a></li>
+    <li><a href='https://tiktok.com/@amritcrome' target="_blank">Tiktok</a></li>
+</ul>
+<ul class="P-lsn box-50p box-3-ipad box-4p-lap cor-menu">
+    <li><a target="_blank"><span class="icon">📚</span> More info</a></li>
+    <li><a expr:href='data:blog.homepageUrl + &quot;privacy&quot;' target="_blank">Your Privacy</a></li>
+    <li><a expr:href='data:blog.homepageUrl + &quot;contact&quot;' target="_blank">Contact me</a></li>
 
-                                            <div class="P-tac Mgin-t56px">
+</ul>
+<ul class="P-lsn box-50p box-3-ipad box-4p-lap cor-menu"><li><a target="_blank"><span class="icon">💥</span> Services</a></li>
+    <li><a expr:href='data:blog.homepageUrl + &quot;fazer&quot;' target="_blank">Fazer</a></li>
+    <li><a expr:href='data:blog.homepageUrl + &quot;particle&quot;' target="_blank">Particle.css</a></li>
+    <li><a href='https://blogger.com' target="_blank">Blogger</a></li>
+</ul>
 
-                                                <a class='icon-holder P-bs2 round P-ho-grow' href='https://instagram.com/amritcrome' target='_blank'>
-                                                    <span class='fab fa-instagram' />
-                                                </a>
-                                                <a class='icon-holder round P-ho-grow' href='https://reddit.com/u/amritcrome' target='_blank'>
-                                                    <span class='fab fa-reddit' />
-                                                </a>
-                                                <a class='icon-holder round P-ho-grow' href='https://www.youtube.com/channel/UCr2qHRyNMzzek46ZO7QI9fg?sub_confirmation=1' target='_blank'>
-                                                    <span class='fab fa-youtube' />
-                                                    <a class='icon-holder round P-ho-grow' href='https://twitter.com/amritcrome' rel='noopener' target='_blank'>
-                                                        <span class='fab fa-twitter' />
-                                                    </a>
-                                                    <a class='icon-holder round P-ho-grow' href='https://pinterest.com/amritcrome' target='_blank'>
-                                                        <span class='fab fa-pinterest' />
-                                                    </a>
-                                                </a>
-                                                <a class='icon-holder round P-ho-grow' href='https://facebook.com/cromeamrit'>
-                                                    <span class='fab fa-facebook' />
-                                                </a>
-                                                <a class='icon-holder round P-ho-grow' href='https://linkedin.com/in/amritcrome' target='_blank'>
-                                                    <span class='fab fa-linkedin' />
-                                                </a>
-
-                                            </div>
-                                            <div class='Pad-t24px P-tac'>
-                                                <a expr:href='data:post.url + &quot;contact&quot;'>Contact me</a>
-
-                                            </div>
-                                            <div class='hdg Pad-t24px P-tac'>
-                                                <a class='P-fwb' expr:href='data:post.url + &quot;privacy&quot;'>Privacy Policy and Cookies Policy</a>
-                                            </div>
-                                            <div class="Pad-t8px P-tac">
-                                                hosted on
-                                                <a href='https://blogger.com'>Blogger</a>
-                                                , built on
-                                                <a expr:href='data:post.url + &quot;fazer&quot;'>Fazer</a>
-                                                template designed by
-                                                <a href='https://amritcrome.com'>amritcrome</a>
-                                                using
-                                                <a expr:href='data:post.url + &quot;particle&quot;'>Particle.css</a>
                                             </div>
                                             <div class='Mgin-b24px P-b0 P-l0 P-pa P-r0 P-tac'>
                                                 <b:include name='nextprev' />
@@ -457,20 +383,11 @@ html{scroll-behaviour:smooth;overflow-wrap:break-word;word-break:break-word;word
                             <b:if cond='data:blog.homepageUrl != data:blog.url and data:blog.pageType == &quot;item&quot;'>
                                 <b:loop values='data:posts' var='post'>
                                     <b:if cond='data:post.labels'>
-                                        <div class='brdcrum'>
-                                            <span itemscope='itemscope' itemtype='http://data-vocabulary.org/Breadcrumb'>
-                                                <a class='Pad-l8px Pad-r8px bg-white lbl round' expr:href='data:blog.homepageUrl' itemprop='url' title='Home'>
-                                                    <span itemprop='title'>Home</span>
-                                                </a>
-                                            </span>
+                                        <div>
                                             <b:loop values='data:post.labels' var='label'>
-                                                <span itemscope='itemscope' itemtype='http://data-vocabulary.org/Breadcrumb'>
-                                                    <a class='Pad-l8px Pad-r8px bg-white lbl round' expr:href='data:label.url + &quot;?max-results=15&quot;' expr:title='data:label.name' itemprop='url'>
-                                                        <span itemprop='title'>
-                                                            <data:label.name />
-                                                        </span>
+                                   <a target="_blank" expr:href='data:label.url + &quot;?max-results=15&quot;' expr:title='data:label.name' itemprop='url'>
+                                          <data:label.name />
                                                     </a>
-                                                </span>
                                             </b:loop>
                                         </div>
                                     </b:if>
@@ -562,6 +479,16 @@ html{scroll-behaviour:smooth;overflow-wrap:break-word;word-break:break-word;word
                                 <b:if cond='data:post.isFirstPost'>
                                     <div class="P-df P-sstxm P-oa hero-post-slider">
                                         <div class='fz-card Pad-24px box-100p box-h100vh box-w100vw home-post-title P-pr P-ssac'>
+                                            <b:if cond='data:post.labels'>
+                                                                <b:loop values='data:post.labels' var='label'>
+                                                                    <b:if cond='data:label.name == "Animad"'>
+                                                                     
+<!--chossong class for homepage posts-->
+<b:class name='animad'/>
+                                                                    </b:if>
+                                                                </b:loop>
+                                                            </b:if>
+                                            
                                             <div class="P-ma fz-cardin P-pr box-h100p">
 
                                                 <b:if cond='data:post.firstImageUrl'>
@@ -631,7 +558,7 @@ Animad label on homepage
                                                     <b:if cond='data:post.snippet'>
                                                         <data:post.snippet />
                                                         <b:else />
-                                                        here comes the meta description that is necessary for neptarg posts maen not working
+                                                        Here comes the meta description that is necessary for neptarg posts mean not working
                                                     </b:if>
                                                     &quot;,&quot;datePublished&quot;: &quot;
                                                     <data:post.timestampISO8601 />
@@ -828,7 +755,9 @@ Animad label on homepage
                                         <div class="fz-card P-pr box-100p Pad-24px P-ssac P-pr box-w100vw box-h100vh">
                                             <div class="Pad-t24px Mgin-t56px">
                                                 <b:if cond='data:post.title'>
-
+                                                    <div class='box-100p Pad-t24px'>
+                                                        <b:include data='posts' name='breadcrumb' />
+                                                    </div>
                                                     <h1 class='tc-white' itemprop='name'>
                                                         <b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'>
                                                             <a class='tc-white' expr:href='data:post.link ? data:post.link : data:post.url'>
@@ -838,9 +767,7 @@ Animad label on homepage
                                                             <data:post.title />
                                                         </b:if>
                                                     </h1>
-                                                    <div class='box-100p Pad-t24px'>
-                                                        <b:include data='posts' name='breadcrumb' />
-                                                    </div>
+                                                    
                                                     <b:if cond='data:blog.metaDescription'>
                                                         <p class='sub-hdg Pad-t24px'>
                                                             <data:blog.metaDescription />
@@ -852,7 +779,7 @@ Animad label on homepage
 
                                                 <div class="P-pa P-b0 P-r0 Mgin-24px">
                                                     <div class='drop P-dib P-fr'>
-                                                        <span class='icon-holder tc-white fas fa-share cal-ho-splash P-ho-border round' />
+                                                        <span class='icon-holder bg-mygrad tc-white fas fa-share cal-ho-splash P-ho-border round' />
                                                         <div class='down P-br4px P-bs2 P-b0 P-r0 Mgin-r24px Mgin-b24px P-zi1 cor-menu bg-subbackground'>
                                                             <ul>
                                                                 <li>
