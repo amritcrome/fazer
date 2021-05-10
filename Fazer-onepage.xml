@@ -280,10 +280,17 @@ html{scroll-behaviour:smooth;overflow-wrap:break-word;word-break:break-word;word
                                 </section>
                                 <b:else />
                                 <b:if cond='data:blog.searchLabel'>
-                                    <b:if cond='data:blog.searchLabel == "Animad"'>
-                                        <section class='fz-home box-h100vh Pad-24px P-oh P-pr box-100p'>
-                                            <b:include data='top' name='status-message' />
-                                        </section>
+                                    <b:if cond='data:blog.searchLabel == "Anime"'>
+                                        <section class="fz-label-animad box-h100vh P-oh P-pr box-100p">
+                                            <div class="Mgin-t56px Pad-24px">
+                                                <b class="hdg">Anime Fans, Lets Connect!</b>
+                                                <p class="sub-hdg">Animad will bring you teh best anime related content.</p>
+                                                <button class="Mgin-t16px P-fwb btn round">Join hands                               
+                                            </button>
+                                        </div>
+                                        <div class="Pad-24px"> <b:include data='top' name='status-message' />
+                                        </div>
+                                            </section>
                                     </b:if>
                                 </b:if>
                             </b:if>
